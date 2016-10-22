@@ -8,16 +8,26 @@
 
 import UIKit
 
-class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
+class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    
+    
+    let cellId = "cellId"
+    
+    let imageNames = ["sad", "sad", "sad"]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupNavBar()
+        setupCollectionView()
         setupViews()
-        
+        setupInputs()
+        }
+    
+    func setupInputs(){
         hideKeyboardWhenTappedAround()
-        
         
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
@@ -27,16 +37,64 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         
         inputTextfield.inputAccessoryView = toolBar
 
-        
     }
     
     let stressContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
         return view
     }()
    
+    
+    let stressLabel: UILabel = {
+        let label = UILabel()
+        label.text = "What's your stress level?"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.textColor = .lightGray
+        label.textAlignment = .center
+        return label
+    }()
+    
+    
+    lazy var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        var cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.translatesAutoresizingMaskIntoConstraints = false
+        cv.dataSource = self
+        cv.delegate = self
+        cv.backgroundColor = UIColor(red:0.16, green:0.35, blue:0.93, alpha:1.00)
+        return cv
+    }()
+    
+    func setupCollectionView(){
+        collectionView.register(StressLevelCell.self, forCellWithReuseIdentifier: cellId)
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! StressLevelCell
+        
+        cell.imageView.image = UIImage(named: imageNames[indexPath.item])?.withRenderingMode(.alwaysTemplate)
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width/3, height: 50)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
     let inputsContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -49,7 +107,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         tf.layer.borderWidth = 1
         tf.layer.borderColor = UIColor.lightGray.cgColor
         tf.placeholder = "What's on your mind?"
-        tf.font = UIFont.systemFont(ofSize: 22)
+        tf.font = UIFont.systemFont(ofSize: 20)
         tf.backgroundColor = .white
         tf.textAlignment = .center
         return tf
@@ -191,10 +249,23 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         navigationController?.navigationBar.tintColor = .white
     }
     
+    lazy var stressLevelBar: StressLevelStatusBar = {
+        let bar = StressLevelStatusBar()
+        bar.translatesAutoresizingMaskIntoConstraints = false
+        bar.createController = self
+        return bar
+        
+    }()
+    
     func setupViews() {
+        
         view.addSubview(stressContainer)
         view.addSubview(inputsContainer)
         view.addSubview(groupContainer)
+        
+        
+        stressContainer.addSubview(stressLabel)
+        stressContainer.addSubview(collectionView)
         
         
         inputsContainer.addSubview(inputTextfield)
@@ -206,7 +277,19 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         stressContainer.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
         stressContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         stressContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        stressContainer.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 1/3).isActive = true
+        stressContainer.heightAnchor.constraint(equalToConstant: 82).isActive = true
+        
+        stressLabel.topAnchor.constraint(equalTo: stressContainer.topAnchor, constant: 6).isActive = true
+        stressLabel.centerXAnchor.constraint(equalTo: stressContainer.centerXAnchor).isActive = true
+        stressLabel.widthAnchor.constraint(equalTo: stressContainer.widthAnchor, multiplier: 0.94).isActive = true
+        stressLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        collectionView.topAnchor.constraint(equalTo: stressLabel.bottomAnchor, constant: 6).isActive = true
+        collectionView.leftAnchor.constraint(equalTo: stressContainer.leftAnchor).isActive = true
+        collectionView.widthAnchor.constraint(equalTo: stressContainer.widthAnchor).isActive = true
+        collectionView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+
+        
         
         inputsContainer.topAnchor.constraint(equalTo: stressContainer.bottomAnchor).isActive = true
         inputsContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
