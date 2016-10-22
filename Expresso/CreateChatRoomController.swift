@@ -61,8 +61,17 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         label.textAlignment = .center
         return label
     }()
-
     
+    let inputLabel: UILabel = {
+        let label = UILabel()
+        label.text = "What's on your mind?"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.textColor = .lightGray
+        label.textAlignment = .center
+        return label
+    }()
+
     let inputsContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -76,12 +85,11 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         tf.layer.borderWidth = 1
         tf.backgroundColor = .blue
         tf.layer.borderColor = UIColor.blue.cgColor
-        tf.placeholder = ""
         tf.font = UIFont.systemFont(ofSize: 20)
         tf.backgroundColor = .blue
         tf.textColor = .white
         tf.textAlignment = .center
-        tf.layer.cornerRadius = 20
+        tf.layer.cornerRadius = 25
         return tf
     }()
     
@@ -94,15 +102,6 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         tv.font = UIFont.systemFont(ofSize: 18)
         tv.layer.cornerRadius = 20
         return tv
-    }()
-    
-    let inputLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Topic:"
-        label.font = UIFont.systemFont(ofSize: 22)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .lightGray
-        return label
     }()
     
     lazy var oneHelp: UIButton = {
@@ -134,18 +133,6 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         print(1234)
         
     }
-    
-//    lazy var topicTextfield: UITextField = {
-//        let tf = UITextField()
-//        tf.translatesAutoresizingMaskIntoConstraints = false
-//        tf.layer.borderWidth = 1
-//        tf.layer.borderColor = UIColor.lightGray.cgColor
-//        tf.font = UIFont.systemFont(ofSize: 22)
-//        tf.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTopic)))
-//        tf.backgroundColor = .white
-//        tf.textAlignment = .center
-//        return tf
-//    }()
     
     func handleTopic(){
         print(123)
@@ -305,18 +292,24 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         
         view.addSubview(stressLabel)
         view.addSubview(stressButtonContainer)
-        view.addSubview(topicLabel)
-        view.addSubview(inputsContainer)
-        
-        view.addSubview(inputSeparator)
-        inputsContainer.addSubview(topicTextfield)
-        topicTextfield.addSubview(downIndicator)
-//        view.addSubview(groupContainer)
-        
         
         stressButtonContainer.addSubview(sadButton)
         stressButtonContainer.addSubview(cryingButton)
         stressButtonContainer.addSubview(upsetButton)
+
+        view.addSubview(topicLabel)
+        view.addSubview(inputsContainer)
+        view.addSubview(inputSeparator)
+        view.addSubview(inputLabel)
+        
+        inputsContainer.addSubview(topicTextfield)
+        topicTextfield.addSubview(downIndicator)
+        
+        
+        
+//        view.addSubview(groupContainer)
+        
+        
         
 //        inputsContainer.addSubview(inputTextfield)
 //        inputsContainer.addSubview(topicLabel)
@@ -378,6 +371,13 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         downIndicator.centerYAnchor.constraint(equalTo: topicTextfield.centerYAnchor).isActive = true
         downIndicator.widthAnchor.constraint(equalToConstant: 28).isActive = true
         downIndicator.heightAnchor.constraint(equalToConstant: 28).isActive = true
+        
+        inputLabel.topAnchor.constraint(equalTo: inputsContainer.bottomAnchor).isActive = true
+        inputLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        inputLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        inputLabel.heightAnchor.constraint(equalToConstant: 44).isActive = true
+
+        
         
 //        inputTextView.topAnchor.constraint(equalTo: inputsContainer.topAnchor, constant: 6).isActive = true
 //        inputTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12).isActive = true
