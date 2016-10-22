@@ -31,7 +31,6 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         topicTextfield.inputView = menuPicker
         topicTextfield.inputAccessoryView = toolBar
         
-        topicTextfield.inputAccessoryView = toolBar
 
     }
     
@@ -89,7 +88,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         tf.backgroundColor = .blue
         tf.textColor = .white
         tf.textAlignment = .center
-        tf.layer.cornerRadius = 25
+        tf.layer.cornerRadius = 20
         return tf
     }()
     
@@ -100,7 +99,6 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         tv.layer.borderColor = UIColor.gray.cgColor
         tv.isEditable = true
         tv.font = UIFont.systemFont(ofSize: 18)
-        tv.layer.cornerRadius = 20
         return tv
     }()
     
@@ -142,7 +140,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     let groupContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .white
+        view.backgroundColor = .systemColor("blue")
         return view
     }()
     
@@ -276,9 +274,14 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .lightGray
         return view
-        
     }()
 
+    let textSeparator: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .lightGray
+        return view
+    }()
     
     let downIndicator: UIImageView = {
         let iv = UIImageView()
@@ -301,13 +304,13 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         view.addSubview(inputsContainer)
         view.addSubview(inputSeparator)
         view.addSubview(inputLabel)
+        view.addSubview(textSeparator)
+        view.addSubview(inputTextView)
         
         inputsContainer.addSubview(topicTextfield)
         topicTextfield.addSubview(downIndicator)
         
-        
-        
-//        view.addSubview(groupContainer)
+        view.addSubview(groupContainer)
         
         
         
@@ -377,18 +380,22 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         inputLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         inputLabel.heightAnchor.constraint(equalToConstant: 44).isActive = true
 
+        textSeparator.topAnchor.constraint(equalTo: inputLabel.bottomAnchor).isActive = true
+        textSeparator.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        textSeparator.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        textSeparator.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
         
         
-//        inputTextView.topAnchor.constraint(equalTo: inputsContainer.topAnchor, constant: 6).isActive = true
-//        inputTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12).isActive = true
-//        inputTextView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
-//        inputTextView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        inputTextView.topAnchor.constraint(equalTo: textSeparator.bottomAnchor, constant: 6).isActive = true
+        inputTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
+        inputTextView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
+        inputTextView.heightAnchor.constraint(equalToConstant: 80).isActive = true
         
         
-//        groupContainer.topAnchor.constraint(equalTo: inputsContainer.bottomAnchor).isActive = true
-//        groupContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-//        groupContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-//        groupContainer.heightAnchor.constraint(equalToConstant: 130).isActive = true
+        groupContainer.topAnchor.constraint(equalTo: inputTextView.bottomAnchor, constant:6).isActive = true
+        groupContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        groupContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        groupContainer.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         
 //        inputTextfield.topAnchor.constraint(equalTo: inputsContainer.topAnchor, constant: 12).isActive = true

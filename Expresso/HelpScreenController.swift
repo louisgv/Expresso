@@ -1,13 +1,11 @@
-//
+
 //  HelpScreenController.swift
 //  Expresso
 //
 //  Created by Viraj Shah on 10/21/16.
 //  Copyright © 2016 Expresso. All rights reserved.
 //
-
 import UIKit
-
 class HelpScreenController: UIViewController{
     
     
@@ -30,9 +28,12 @@ class HelpScreenController: UIViewController{
     lazy var helpMeButton: UIButton = {
         let button = UIButton()
         button.setTitle("Help Me", for: .normal)
+        button.titleLabel!.font =  UIFont(name: "STHeitiTC-Light", size: 20)
         button.addTarget(self, action: #selector(handleHelpMe), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .blue
+        button.layer.cornerRadius = 25
+        button.layer.borderColor = UIColor.blue.cgColor
         return button
     }()
     
@@ -42,8 +43,28 @@ class HelpScreenController: UIViewController{
         button.addTarget(self, action: #selector(handleHelpOthers), for: .touchUpInside)
         button.backgroundColor = .blue
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 25
+        button.layer.borderColor = UIColor.blue.cgColor
+        
         return button
     }()
+    
+    let logoContainer: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .red
+        return view
+    }()
+    
+    let imageView: UIImageView = {
+        let logoimg = UIImageView()
+        logoimg.image = UIImage(named: "coffee")?.withRenderingMode(.alwaysTemplate)
+        logoimg.translatesAutoresizingMaskIntoConstraints = false
+        logoimg.contentMode = .scaleAspectFill
+        logoimg.clipsToBounds = true
+        return logoimg
+    }()
+    
     
     func handleHelpMe(){
         self.navigationController!.popViewController(animated: true)
@@ -58,18 +79,22 @@ class HelpScreenController: UIViewController{
     func setupNavBar(){
         navigationController?.navigationBar.isTranslucent = false
         navigationItem.title = "How can we help?"
-        navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 18)!, NSForegroundColorAttributeName : UIColor.white]
+        navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Helvetica", size: 18)!, NSForegroundColorAttributeName : UIColor.white]
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: navigationController, action: nil)
         navigationItem.leftBarButtonItem = backButton
     }
     
     func setupViews(){
         
-       view.addSubview(buttonContainer)
-       buttonContainer.addSubview(helpMeButton)
-       buttonContainer.addSubview(helpOthersButton)
+        view.addSubview(imageView)
+        view.addSubview(buttonContainer)
+        buttonContainer.addSubview(helpMeButton)
+        buttonContainer.addSubview(helpOthersButton)
         
-        
+        imageView.bottomAnchor.constraint(equalTo: helpMeButton.topAnchor, constant: -50).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 6).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         buttonContainer.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         buttonContainer.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         buttonContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
