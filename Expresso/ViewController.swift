@@ -12,14 +12,38 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupNavBar()
+        checkUser()
+        view.backgroundColor = .white
     }
+    
+    
+    let helpScreen = HelpScreenController()
+    
+    func checkUser(){
+        navigationController?.pushViewController(helpScreen, animated: true)
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
+    func setupNavBar(){
+        let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.height))
+        titleLabel.text = " Help Out"
+        titleLabel.textColor = .white
+        titleLabel.font = UIFont.systemFont(ofSize: 20)
+        navigationItem.titleView = titleLabel
+        
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.barTintColor = UIColor(red:0.14, green:0.32, blue:0.95, alpha:1.00)
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
+        let plusButton = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(addAnnouncement))
+        plusButton.tintColor = .white
+        navigationItem.rightBarButtonItems = [plusButton]
+    }
+    func addAnnouncement(){
+        print(123)
+    }
 
 }
 
