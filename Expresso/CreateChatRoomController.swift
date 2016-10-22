@@ -60,6 +60,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         label.text = "Topic:"
         label.font = UIFont.systemFont(ofSize: 22)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .lightGray
         return label
     }()
     
@@ -68,7 +69,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         button.setTitle("1 On 1 Help", for: .normal)
         button.addTarget(self, action: #selector(handleButtonOne), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .blue
+        button.backgroundColor = .systemColor("blue")
         button.layer.cornerRadius = 25
         button.layer.borderColor = UIColor.blue.cgColor
         return button
@@ -83,7 +84,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         button.setTitle("Group Help", for: .normal)
         button.addTarget(self, action: #selector(handleButtonTwo), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .blue
+        button.backgroundColor = .systemColor("blue")
         button.layer.cornerRadius = 25
         button.layer.borderColor = UIColor.blue.cgColor
         return button

@@ -1,0 +1,6 @@
+framework module Pods_Expresso {
+  umbrella header "Pods-Expresso-umbrella.h"
+
+  export *
+  module * { export * }
+}
