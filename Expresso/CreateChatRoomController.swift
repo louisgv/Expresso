@@ -8,12 +8,26 @@
 
 import UIKit
 
-class CreateChatRoomController: UIViewController{
+class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupNavBar()
         setupViews()
+        
+        hideKeyboardWhenTappedAround()
+        
+        
+        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        
+        topicTextfield.inputView = menuPicker
+        topicTextfield.inputAccessoryView = toolBar
+        
+        inputTextfield.inputAccessoryView = toolBar
+
+        
     }
     
     let stressContainer: UIView = {
@@ -26,7 +40,6 @@ class CreateChatRoomController: UIViewController{
     let inputsContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .white
         return view
     }()
     
@@ -104,6 +117,72 @@ class CreateChatRoomController: UIViewController{
         return view
     }()
     
+    lazy var menuPicker: UIPickerView = {
+        let picker = UIPickerView()
+        picker.backgroundColor = UIColor.white
+        picker.translatesAutoresizingMaskIntoConstraints = false
+        picker.delegate = self
+        picker.dataSource = self
+        picker.showsSelectionIndicator = true
+        return picker
+    }()
+    
+    let topicPickerData = ["Suicidal", "High Stress", "Relationships"]
+    
+    lazy var doneButton: UIBarButtonItem = {
+        var btn = UIBarButtonItem()
+        btn = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
+        
+        return btn
+    }()
+    
+    let spaceButton: UIBarButtonItem = {
+        var btn = UIBarButtonItem()
+        btn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        
+        return btn
+    }()
+    
+    lazy var cancelButton: UIBarButtonItem = {
+        var btn = UIBarButtonItem()
+        btn = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePicker))
+        return btn
+    }()
+    
+    func donePicker(){
+        topicTextfield.resignFirstResponder()
+        inputTextfield.resignFirstResponder()
+    }
+    
+    lazy var toolBar: UIToolbar = {
+        let tb = UIToolbar()
+        tb.barStyle = UIBarStyle.default
+        tb.isTranslucent = true
+        tb.tintColor = UIColor.gray
+        tb.sizeToFit()
+        tb.translatesAutoresizingMaskIntoConstraints = false
+        
+        return tb
+    }()
+    
+    func numberOfComponents(in colorPicker: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return topicPickerData.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
+    {
+        return topicPickerData[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 50
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        topicTextfield.text = topicPickerData[row]
+    }
+    
     func setupNavBar(){
         navigationController?.navigationBar.isTranslucent = false
         navigationItem.title = "Request help"
@@ -131,7 +210,7 @@ class CreateChatRoomController: UIViewController{
         inputsContainer.topAnchor.constraint(equalTo: stressContainer.bottomAnchor).isActive = true
         inputsContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         inputsContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        inputsContainer.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        inputsContainer.heightAnchor.constraint(equalToConstant: 110).isActive = true
         
         groupContainer.topAnchor.constraint(equalTo: inputsContainer.bottomAnchor).isActive = true
         groupContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -142,17 +221,17 @@ class CreateChatRoomController: UIViewController{
         inputTextfield.topAnchor.constraint(equalTo: inputsContainer.topAnchor, constant: 12).isActive = true
         inputTextfield.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
         inputTextfield.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
-        inputTextfield.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        inputTextfield.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         topicLabel.topAnchor.constraint(equalTo: inputTextfield.bottomAnchor, constant: 6).isActive = true
         topicLabel.leftAnchor.constraint(equalTo: inputsContainer.leftAnchor, constant: 6).isActive = true
         topicLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/2, constant: -12).isActive = true
-        topicLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        topicLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         topicTextfield.topAnchor.constraint(equalTo: inputTextfield.bottomAnchor, constant: 6).isActive = true
         topicTextfield.leftAnchor.constraint(equalTo: topicLabel.rightAnchor, constant: 6).isActive = true
         topicTextfield.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/2, constant: -6).isActive = true
-        topicTextfield.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        topicTextfield.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         oneHelp.topAnchor.constraint(equalTo: groupContainer.topAnchor, constant: 12).isActive = true
         oneHelp.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true

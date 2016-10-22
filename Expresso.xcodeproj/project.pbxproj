@@ -16,6 +16,7 @@
 		032E5F771DBAF53900B2A6F2 /* ExpressoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F761DBAF53900B2A6F2 /* ExpressoUITests.swift */; };
 		032E5F851DBAF7EC00B2A6F2 /* HelpScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F841DBAF7EC00B2A6F2 /* HelpScreenController.swift */; };
 		032E5F871DBB17E500B2A6F2 /* CreateChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F861DBB17E500B2A6F2 /* CreateChatRoomController.swift */; };
+		032E5F891DBB325B00B2A6F2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F881DBB325B00B2A6F2 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		032E5F781DBAF53900B2A6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		032E5F841DBAF7EC00B2A6F2 /* HelpScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpScreenController.swift; sourceTree = "<group>"; };
 		032E5F861DBB17E500B2A6F2 /* CreateChatRoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChatRoomController.swift; sourceTree = "<group>"; };
+		032E5F881DBB325B00B2A6F2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				032E5F561DBAF53900B2A6F2 /* AppDelegate.swift */,
 				032E5F581DBAF53900B2A6F2 /* ViewController.swift */,
+				032E5F881DBB325B00B2A6F2 /* Extensions.swift */,
 				032E5F841DBAF7EC00B2A6F2 /* HelpScreenController.swift */,
 				032E5F861DBB17E500B2A6F2 /* CreateChatRoomController.swift */,
 				032E5F5A1DBAF53900B2A6F2 /* Main.storyboard */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032E5F891DBB325B00B2A6F2 /* Extensions.swift in Sources */,
 				032E5F851DBAF7EC00B2A6F2 /* HelpScreenController.swift in Sources */,
 				032E5F591DBAF53900B2A6F2 /* ViewController.swift in Sources */,
 				032E5F871DBB17E500B2A6F2 /* CreateChatRoomController.swift in Sources */,
