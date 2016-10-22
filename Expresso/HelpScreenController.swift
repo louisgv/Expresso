@@ -17,6 +17,13 @@ class HelpScreenController: UIViewController{
         setupViews()
     }
     
+    
+    let buttonContainer: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     lazy var helpMeButton: UIButton = {
         let button = UIButton()
         button.setTitle("Help Me", for: .normal)
@@ -53,14 +60,28 @@ class HelpScreenController: UIViewController{
     }
     
     func setupViews(){
-        view.addSubview(helpMeButton)
-        //view.addSubview(helpOthersButton)
+        
+        view.addSubview(buttonContainer)
+       buttonContainer.addSubview(helpMeButton)
+       buttonContainer.addSubview(helpOthersButton)
         
         
-        helpMeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        helpMeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        helpMeButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.92).isActive = true
-        helpMeButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        buttonContainer.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        buttonContainer.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        buttonContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        buttonContainer.heightAnchor.constraint(equalToConstant: 196).isActive = true
+        
+        helpMeButton.topAnchor.constraint(equalTo: buttonContainer.topAnchor, constant: 12).isActive = true
+        helpMeButton.leftAnchor.constraint(equalTo: buttonContainer.leftAnchor, constant: 6).isActive = true
+        helpMeButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
+        helpMeButton.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
+        //ios9 constraints, x,y,width, height
+        
+        helpOthersButton.topAnchor.constraint(equalTo: helpMeButton.bottomAnchor, constant: 12).isActive = true
+        helpOthersButton.leftAnchor.constraint(equalTo: buttonContainer.leftAnchor, constant: 6).isActive = true
+        helpOthersButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
+        helpOthersButton.heightAnchor.constraint(equalToConstant: 80).isActive = true
         
         
     }
