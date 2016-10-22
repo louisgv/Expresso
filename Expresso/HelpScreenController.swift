@@ -14,6 +14,7 @@ class HelpScreenController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        
         setupNavBar()
         setupViews()
     }

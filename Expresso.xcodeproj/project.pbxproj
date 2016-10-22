@@ -17,8 +17,7 @@
 		032E5F851DBAF7EC00B2A6F2 /* HelpScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F841DBAF7EC00B2A6F2 /* HelpScreenController.swift */; };
 		032E5F871DBB17E500B2A6F2 /* CreateChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F861DBB17E500B2A6F2 /* CreateChatRoomController.swift */; };
 		032E5F891DBB325B00B2A6F2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F881DBB325B00B2A6F2 /* Extensions.swift */; };
-		032E5F8D1DBBC09900B2A6F2 /* StressLevelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F8C1DBBC09900B2A6F2 /* StressLevelCell.swift */; };
-		032E5F8F1DBBE14700B2A6F2 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F8E1DBBE14700B2A6F2 /* MenuBar.swift */; };
+		032E5F911DBC184C00B2A6F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 032E5F901DBC184C00B2A6F2 /* GoogleService-Info.plist */; };
 		257793BC208098443E335343 /* Pods_ExpressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4CE723ADE82BC7829D108 /* Pods_ExpressoTests.framework */; };
 		6D921903D57A55FDC058EA57 /* Pods_ExpressoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615936A55EF85F99C8E7E210 /* Pods_ExpressoUITests.framework */; };
 		BBEC7E2636554F0FAD614406 /* Pods_Expresso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CE5C185D2FEDECA89732B0 /* Pods_Expresso.framework */; };
@@ -58,8 +57,8 @@
 		032E5F841DBAF7EC00B2A6F2 /* HelpScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpScreenController.swift; sourceTree = "<group>"; };
 		032E5F861DBB17E500B2A6F2 /* CreateChatRoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChatRoomController.swift; sourceTree = "<group>"; };
 		032E5F881DBB325B00B2A6F2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		032E5F8C1DBBC09900B2A6F2 /* StressLevelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StressLevelCell.swift; sourceTree = "<group>"; };
-		032E5F8E1DBBE14700B2A6F2 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		032E5F901DBC184C00B2A6F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		032E5F921DBC218400B2A6F2 /* Expresso.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expresso.entitlements; sourceTree = "<group>"; };
 		2E99395227C1389408C7E98A /* Pods-Expresso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expresso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Expresso/Pods-Expresso.debug.xcconfig"; sourceTree = "<group>"; };
 		3CB4CE723ADE82BC7829D108 /* Pods_ExpressoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpressoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		615936A55EF85F99C8E7E210 /* Pods_ExpressoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpressoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,17 +123,17 @@
 		032E5F551DBAF53900B2A6F2 /* Expresso */ = {
 			isa = PBXGroup;
 			children = (
+				032E5F921DBC218400B2A6F2 /* Expresso.entitlements */,
 				032E5F561DBAF53900B2A6F2 /* AppDelegate.swift */,
 				032E5F881DBB325B00B2A6F2 /* Extensions.swift */,
 				032E5F581DBAF53900B2A6F2 /* ViewController.swift */,
 				032E5F861DBB17E500B2A6F2 /* CreateChatRoomController.swift */,
 				032E5F841DBAF7EC00B2A6F2 /* HelpScreenController.swift */,
-				032E5F8C1DBBC09900B2A6F2 /* StressLevelCell.swift */,
-				032E5F8E1DBBE14700B2A6F2 /* MenuBar.swift */,
 				032E5F5A1DBAF53900B2A6F2 /* Main.storyboard */,
 				032E5F5D1DBAF53900B2A6F2 /* Assets.xcassets */,
 				032E5F5F1DBAF53900B2A6F2 /* LaunchScreen.storyboard */,
 				032E5F621DBAF53900B2A6F2 /* Info.plist */,
+				032E5F901DBC184C00B2A6F2 /* GoogleService-Info.plist */,
 			);
 			path = Expresso;
 			sourceTree = "<group>";
@@ -258,6 +257,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = BZY65TYX78;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					032E5F661DBAF53900B2A6F2 = {
 						CreatedOnToolsVersion = 8.0;
@@ -299,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				032E5F611DBAF53900B2A6F2 /* LaunchScreen.storyboard in Resources */,
+				032E5F911DBC184C00B2A6F2 /* GoogleService-Info.plist in Resources */,
 				032E5F5E1DBAF53900B2A6F2 /* Assets.xcassets in Resources */,
 				032E5F5C1DBAF53900B2A6F2 /* Main.storyboard in Resources */,
 			);
@@ -448,9 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				032E5F8D1DBBC09900B2A6F2 /* StressLevelCell.swift in Sources */,
 				032E5F891DBB325B00B2A6F2 /* Extensions.swift in Sources */,
-				032E5F8F1DBBE14700B2A6F2 /* MenuBar.swift in Sources */,
 				032E5F851DBAF7EC00B2A6F2 /* HelpScreenController.swift in Sources */,
 				032E5F591DBAF53900B2A6F2 /* ViewController.swift in Sources */,
 				032E5F871DBB17E500B2A6F2 /* CreateChatRoomController.swift in Sources */,
@@ -605,8 +608,11 @@
 			baseConfigurationReference = 2E99395227C1389408C7E98A /* Pods-Expresso.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Expresso/Expresso.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = BZY65TYX78;
 				INFOPLIST_FILE = Expresso/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.expresso.Expresso;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -619,8 +625,12 @@
 			baseConfigurationReference = 707D79AB6F7A41C3D5EE9536 /* Pods-Expresso.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Expresso/Expresso.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = BZY65TYX78;
 				INFOPLIST_FILE = Expresso/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.expresso.Expresso;
 				PRODUCT_NAME = "$(TARGET_NAME)";

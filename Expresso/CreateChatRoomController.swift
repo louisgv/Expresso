@@ -11,8 +11,8 @@ import UIKit
 class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
     let cellId = "cellId"
-    
     let imageNames = ["sad", "crying", "mad"]
+    var stressLevel:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,6 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         
         topicTextfield.inputView = menuPicker
         topicTextfield.inputAccessoryView = toolBar
-        
 
     }
     
@@ -119,7 +118,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     
     lazy var submitButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Group Help", for: .normal)
+        button.setTitle("Submit Request", for: .normal)
         button.addTarget(self, action: #selector(handleButtonTap), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .systemColor("blue")
@@ -129,8 +128,25 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         button.setTitleColor(.white, for: .normal)
         return button
     }()
+    
+    
     func handleButtonTap() {
-        self.navigationController!.popViewController(animated: true)
+        
+        if checkInputValues(){
+            self.navigationController!.popViewController(animated: true)
+
+        }
+        
+        
+    }
+    
+    
+    func checkInputValues() -> Bool{
+        if (topicTextfield.text?.isEmpty)! || (inputTextView.text?.isEmpty)! || (stressLevel.isEmpty) {
+            return false
+        }
+        
+        return true
     }
     
     let groupContainer: UIView = {
@@ -228,12 +244,16 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     }()
     
     func handleSadButtonTap(){
+        
+        stressLevel = "SAD"
         sadButton.tintColor = .white
         cryingButton.tintColor = .blue
         upsetButton.tintColor = .blue
     }
     
     func handleCryingButtonTap(){
+        
+        stressLevel = "CRYING"
         sadButton.tintColor = .blue
         cryingButton.tintColor = .white
         upsetButton.tintColor = .blue
@@ -241,6 +261,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     func handleUpsetButtonTap(){
+        stressLevel = "UPSET"
         sadButton.tintColor = .blue
         cryingButton.tintColor = .blue
         upsetButton.tintColor = .white
@@ -321,12 +342,10 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         stressButtonContainer.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         
-        
-//        sadButton.topAnchor.constraint(equalTo: stressButtonContainer.topAnchor).isActive = true
         sadButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         sadButton.centerYAnchor.constraint(equalTo: stressButtonContainer.centerYAnchor).isActive = true
         sadButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/3).isActive = true
-        sadButton.heightAnchor.constraint(equalToConstant: 28).isActive = true
+        sadButton.heightAnchor.constraint(equalToConstant: 32).isActive = true
         
         cryingButton.leftAnchor.constraint(equalTo: sadButton.rightAnchor).isActive = true
         cryingButton.centerYAnchor.constraint(equalTo: sadButton.centerYAnchor).isActive = true
@@ -388,7 +407,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         groupContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         groupContainer.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
-        submitButton.topAnchor.constraint(equalTo: groupContainer.topAnchor, constant: 12).isActive = true
+        submitButton.topAnchor.constraint(equalTo: groupContainer.topAnchor).isActive = true
         submitButton.leftAnchor.constraint(equalTo: groupContainer.leftAnchor, constant: 6).isActive = true
         submitButton.widthAnchor.constraint(equalTo: groupContainer.widthAnchor, constant: -12).isActive = true
         submitButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
