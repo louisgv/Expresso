@@ -31,7 +31,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         topicTextfield.inputView = menuPicker
         topicTextfield.inputAccessoryView = toolBar
         
-        inputTextfield.inputAccessoryView = toolBar
+        topicTextfield.inputAccessoryView = toolBar
 
     }
     
@@ -52,27 +52,51 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         return label
     }()
     
+    let topicLabel: UILabel = {
+        let label = UILabel()
+        label.text = "What do you want to talk about?"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.textColor = .lightGray
+        label.textAlignment = .center
+        return label
+    }()
 
     
     let inputsContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .systemColor("blue")
         return view
     }()
     
-    let inputTextfield: UITextField = {
+    let topicTextfield: UITextField = {
         let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.layer.borderWidth = 1
-        tf.layer.borderColor = UIColor.lightGray.cgColor
-        tf.placeholder = "What's on your mind?"
+        tf.backgroundColor = .blue
+        tf.layer.borderColor = UIColor.blue.cgColor
+        tf.placeholder = ""
         tf.font = UIFont.systemFont(ofSize: 20)
-        tf.backgroundColor = .white
+        tf.backgroundColor = .blue
+        tf.textColor = .white
         tf.textAlignment = .center
+        tf.layer.cornerRadius = 20
         return tf
     }()
     
-    let topicLabel: UILabel = {
+    let inputTextView: UITextView = {
+        let tv = UITextView()
+        tv.translatesAutoresizingMaskIntoConstraints = false
+        tv.layer.borderWidth = 0.5
+        tv.layer.borderColor = UIColor.gray.cgColor
+        tv.isEditable = true
+        tv.font = UIFont.systemFont(ofSize: 18)
+        tv.layer.cornerRadius = 20
+        return tv
+    }()
+    
+    let inputLabel: UILabel = {
         let label = UILabel()
         label.text = "Topic:"
         label.font = UIFont.systemFont(ofSize: 22)
@@ -111,17 +135,17 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         
     }
     
-    lazy var topicTextfield: UITextField = {
-        let tf = UITextField()
-        tf.translatesAutoresizingMaskIntoConstraints = false
-        tf.layer.borderWidth = 1
-        tf.layer.borderColor = UIColor.lightGray.cgColor
-        tf.font = UIFont.systemFont(ofSize: 22)
-        tf.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTopic)))
-        tf.backgroundColor = .white
-        tf.textAlignment = .center
-        return tf
-    }()
+//    lazy var topicTextfield: UITextField = {
+//        let tf = UITextField()
+//        tf.translatesAutoresizingMaskIntoConstraints = false
+//        tf.layer.borderWidth = 1
+//        tf.layer.borderColor = UIColor.lightGray.cgColor
+//        tf.font = UIFont.systemFont(ofSize: 22)
+//        tf.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTopic)))
+//        tf.backgroundColor = .white
+//        tf.textAlignment = .center
+//        return tf
+//    }()
     
     func handleTopic(){
         print(123)
@@ -169,7 +193,6 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func donePicker(){
         topicTextfield.resignFirstResponder()
-        inputTextfield.resignFirstResponder()
     }
     
     lazy var toolBar: UIToolbar = {
@@ -260,30 +283,51 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         button.addTarget(self, action: #selector(handleUpsetButtonTap), for: .touchUpInside)
         return button
     }()
+    
+    let inputSeparator: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .lightGray
+        return view
+        
+    }()
 
+    
+    let downIndicator: UIImageView = {
+        let iv = UIImageView()
+        iv.image = UIImage(named: "down")
+        iv.contentMode = .scaleAspectFit
+        iv.translatesAutoresizingMaskIntoConstraints = false
+        return iv
+    }()
     
     func setupViews() {
         
         view.addSubview(stressLabel)
         view.addSubview(stressButtonContainer)
+        view.addSubview(topicLabel)
         view.addSubview(inputsContainer)
-        view.addSubview(groupContainer)
+        
+        view.addSubview(inputSeparator)
+        inputsContainer.addSubview(topicTextfield)
+        topicTextfield.addSubview(downIndicator)
+//        view.addSubview(groupContainer)
         
         
         stressButtonContainer.addSubview(sadButton)
         stressButtonContainer.addSubview(cryingButton)
         stressButtonContainer.addSubview(upsetButton)
         
-        inputsContainer.addSubview(inputTextfield)
-        inputsContainer.addSubview(topicLabel)
-        inputsContainer.addSubview(topicTextfield)
-        groupContainer.addSubview(oneHelp)
-        groupContainer.addSubview(groupHelp)
+//        inputsContainer.addSubview(inputTextfield)
+//        inputsContainer.addSubview(topicLabel)
+//        inputsContainer.addSubview(topicTextfield)
+//        groupContainer.addSubview(oneHelp)
+//        groupContainer.addSubview(groupHelp)
         
         stressLabel.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
         stressLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         stressLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        stressLabel.heightAnchor.constraint(equalToConstant: 32).isActive = true
+        stressLabel.heightAnchor.constraint(equalToConstant: 44).isActive = true
         
         stressButtonContainer.topAnchor.constraint(equalTo: stressLabel.bottomAnchor).isActive = true
         stressButtonContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -307,43 +351,70 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         upsetButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/3).isActive = true
         upsetButton.heightAnchor.constraint(equalTo: sadButton.heightAnchor).isActive = true
 
+        topicLabel.topAnchor.constraint(equalTo: stressButtonContainer.bottomAnchor).isActive = true
+        topicLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        topicLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        topicLabel.heightAnchor.constraint(equalToConstant: 44).isActive = true
+
+        
+        inputSeparator.topAnchor.constraint(equalTo: topicLabel.bottomAnchor).isActive = true
+        inputSeparator.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        inputSeparator.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        inputSeparator.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
         
         
-        inputsContainer.topAnchor.constraint(equalTo: stressButtonContainer.bottomAnchor).isActive = true
+        inputsContainer.topAnchor.constraint(equalTo: inputSeparator.bottomAnchor).isActive = true
         inputsContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         inputsContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        inputsContainer.heightAnchor.constraint(equalToConstant: 110).isActive = true
-        
-        groupContainer.topAnchor.constraint(equalTo: inputsContainer.bottomAnchor).isActive = true
-        groupContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        groupContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        groupContainer.heightAnchor.constraint(equalToConstant: 130).isActive = true
-        
-        
-        inputTextfield.topAnchor.constraint(equalTo: inputsContainer.topAnchor, constant: 12).isActive = true
-        inputTextfield.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
-        inputTextfield.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
-        inputTextfield.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
-        topicLabel.topAnchor.constraint(equalTo: inputTextfield.bottomAnchor, constant: 6).isActive = true
-        topicLabel.leftAnchor.constraint(equalTo: inputsContainer.leftAnchor, constant: 6).isActive = true
-        topicLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/2, constant: -12).isActive = true
-        topicLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
-        topicTextfield.topAnchor.constraint(equalTo: inputTextfield.bottomAnchor, constant: 6).isActive = true
-        topicTextfield.leftAnchor.constraint(equalTo: topicLabel.rightAnchor, constant: 6).isActive = true
-        topicTextfield.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/2, constant: -6).isActive = true
+        inputsContainer.heightAnchor.constraint(equalToConstant: 52).isActive = true
+
+        topicTextfield.topAnchor.constraint(equalTo: inputsContainer.topAnchor, constant: 6).isActive = true
+        topicTextfield.leftAnchor.constraint(equalTo: inputsContainer.leftAnchor, constant: 6).isActive = true
+        topicTextfield.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
         topicTextfield.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
-        oneHelp.topAnchor.constraint(equalTo: groupContainer.topAnchor, constant: 12).isActive = true
-        oneHelp.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
-        oneHelp.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
-        oneHelp.heightAnchor.constraint(equalToConstant: 60).isActive = true
-    
-        groupHelp.topAnchor.constraint(equalTo: oneHelp.bottomAnchor, constant: 6).isActive = true
-        groupHelp.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
-        groupHelp.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
-        groupHelp.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        
+        downIndicator.rightAnchor.constraint(equalTo: topicTextfield.rightAnchor, constant: -10).isActive = true
+        downIndicator.centerYAnchor.constraint(equalTo: topicTextfield.centerYAnchor).isActive = true
+        downIndicator.widthAnchor.constraint(equalToConstant: 28).isActive = true
+        downIndicator.heightAnchor.constraint(equalToConstant: 28).isActive = true
+        
+//        inputTextView.topAnchor.constraint(equalTo: inputsContainer.topAnchor, constant: 6).isActive = true
+//        inputTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12).isActive = true
+//        inputTextView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
+//        inputTextView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        
+        
+//        groupContainer.topAnchor.constraint(equalTo: inputsContainer.bottomAnchor).isActive = true
+//        groupContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+//        groupContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+//        groupContainer.heightAnchor.constraint(equalToConstant: 130).isActive = true
+        
+        
+//        inputTextfield.topAnchor.constraint(equalTo: inputsContainer.topAnchor, constant: 12).isActive = true
+//        inputTextfield.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
+//        inputTextfield.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
+//        inputTextfield.heightAnchor.constraint(equalToConstant: 40).isActive = true
+//        
+//        topicLabel.topAnchor.constraint(equalTo: inputTextfield.bottomAnchor, constant: 6).isActive = true
+//        topicLabel.leftAnchor.constraint(equalTo: inputsContainer.leftAnchor, constant: 6).isActive = true
+//        topicLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/2, constant: -12).isActive = true
+//        topicLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
+//        
+//        topicTextfield.topAnchor.constraint(equalTo: inputTextfield.bottomAnchor, constant: 6).isActive = true
+//        topicTextfield.leftAnchor.constraint(equalTo: topicLabel.rightAnchor, constant: 6).isActive = true
+//        topicTextfield.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/2, constant: -6).isActive = true
+//        topicTextfield.heightAnchor.constraint(equalToConstant: 40).isActive = true
+//        
+//        oneHelp.topAnchor.constraint(equalTo: groupContainer.topAnchor, constant: 12).isActive = true
+//        oneHelp.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
+//        oneHelp.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
+//        oneHelp.heightAnchor.constraint(equalToConstant: 60).isActive = true
+//    
+//        groupHelp.topAnchor.constraint(equalTo: oneHelp.bottomAnchor, constant: 6).isActive = true
+//        groupHelp.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
+//        groupHelp.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
+//        groupHelp.heightAnchor.constraint(equalToConstant: 60).isActive = true
 
     }
 }
