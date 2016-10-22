@@ -50,6 +50,35 @@ class CreateChatRoomController: UIViewController{
         return label
     }()
     
+    lazy var oneHelp: UIButton = {
+        let button = UIButton()
+        button.setTitle("1 On 1 Help", for: .normal)
+        button.addTarget(self, action: #selector(handleButtonOne), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .blue
+        button.layer.cornerRadius = 25
+        button.layer.borderColor = UIColor.blue.cgColor
+        return button
+    }()
+    func handleButtonOne() {
+    print(123)
+    }
+    
+    
+    lazy var groupHelp: UIButton = {
+        let button = UIButton()
+        button.setTitle("Group Help", for: .normal)
+        button.addTarget(self, action: #selector(handleButtonTwo), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .blue
+        button.layer.cornerRadius = 25
+        button.layer.borderColor = UIColor.blue.cgColor
+        return button
+    }()
+    func handleButtonTwo() {
+        print(1234)
+        
+    }
     
     lazy var topicTextfield: UITextField = {
         let tf = UITextField()
@@ -71,7 +100,7 @@ class CreateChatRoomController: UIViewController{
     let groupContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .yellow
+        view.backgroundColor = .white
         return view
     }()
     
@@ -91,6 +120,8 @@ class CreateChatRoomController: UIViewController{
         inputsContainer.addSubview(inputTextfield)
         inputsContainer.addSubview(topicLabel)
         inputsContainer.addSubview(topicTextfield)
+        groupContainer.addSubview(oneHelp)
+        groupContainer.addSubview(groupHelp)
         
         stressContainer.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
         stressContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -105,22 +136,33 @@ class CreateChatRoomController: UIViewController{
         groupContainer.topAnchor.constraint(equalTo: inputsContainer.bottomAnchor).isActive = true
         groupContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         groupContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        groupContainer.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 1/3).isActive = true
+        groupContainer.heightAnchor.constraint(equalToConstant: 130).isActive = true
         
         
         inputTextfield.topAnchor.constraint(equalTo: inputsContainer.topAnchor, constant: 12).isActive = true
         inputTextfield.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
         inputTextfield.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
-        inputTextfield.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        inputTextfield.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         topicLabel.topAnchor.constraint(equalTo: inputTextfield.bottomAnchor, constant: 6).isActive = true
         topicLabel.leftAnchor.constraint(equalTo: inputsContainer.leftAnchor, constant: 6).isActive = true
         topicLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/2, constant: -12).isActive = true
-        topicLabel.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        topicLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         topicTextfield.topAnchor.constraint(equalTo: inputTextfield.bottomAnchor, constant: 6).isActive = true
         topicTextfield.leftAnchor.constraint(equalTo: topicLabel.rightAnchor, constant: 6).isActive = true
         topicTextfield.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/2, constant: -6).isActive = true
-        topicTextfield.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        topicTextfield.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
+        oneHelp.topAnchor.constraint(equalTo: groupContainer.topAnchor, constant: 12).isActive = true
+        oneHelp.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
+        oneHelp.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
+        oneHelp.heightAnchor.constraint(equalToConstant: 60).isActive = true
+    
+        groupHelp.topAnchor.constraint(equalTo: oneHelp.bottomAnchor, constant: 6).isActive = true
+        groupHelp.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
+        groupHelp.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
+        groupHelp.heightAnchor.constraint(equalToConstant: 60).isActive = true
+
     }
 }
