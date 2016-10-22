@@ -30,10 +30,9 @@ class ViewController: UIViewController {
 
     }
     
-    
+    let createChatController = CreateChatRoomController()
     
     func createChatRoom(){
-        let createChatController = CreateChatRoomController()
         navigationController?.pushViewController(createChatController, animated: true)
     }
     
@@ -49,12 +48,9 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
         
-        let plusButton = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(addAnnouncement))
+        let plusButton = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(createChatRoom))
         plusButton.tintColor = .white
         navigationItem.rightBarButtonItems = [plusButton]
-    }
-    func addAnnouncement(){
-        print(123)
     }
 
 }
