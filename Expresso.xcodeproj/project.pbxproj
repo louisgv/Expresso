@@ -15,6 +15,7 @@
 		032E5F6C1DBAF53900B2A6F2 /* ExpressoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F6B1DBAF53900B2A6F2 /* ExpressoTests.swift */; };
 		032E5F771DBAF53900B2A6F2 /* ExpressoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F761DBAF53900B2A6F2 /* ExpressoUITests.swift */; };
 		032E5F851DBAF7EC00B2A6F2 /* HelpScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F841DBAF7EC00B2A6F2 /* HelpScreenController.swift */; };
+		032E5F871DBB17E500B2A6F2 /* CreateChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F861DBB17E500B2A6F2 /* CreateChatRoomController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		032E5F761DBAF53900B2A6F2 /* ExpressoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressoUITests.swift; sourceTree = "<group>"; };
 		032E5F781DBAF53900B2A6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		032E5F841DBAF7EC00B2A6F2 /* HelpScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpScreenController.swift; sourceTree = "<group>"; };
+		032E5F861DBB17E500B2A6F2 /* CreateChatRoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChatRoomController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				032E5F561DBAF53900B2A6F2 /* AppDelegate.swift */,
 				032E5F581DBAF53900B2A6F2 /* ViewController.swift */,
 				032E5F841DBAF7EC00B2A6F2 /* HelpScreenController.swift */,
+				032E5F861DBB17E500B2A6F2 /* CreateChatRoomController.swift */,
 				032E5F5A1DBAF53900B2A6F2 /* Main.storyboard */,
 				032E5F5D1DBAF53900B2A6F2 /* Assets.xcassets */,
 				032E5F5F1DBAF53900B2A6F2 /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				032E5F851DBAF7EC00B2A6F2 /* HelpScreenController.swift in Sources */,
 				032E5F591DBAF53900B2A6F2 /* ViewController.swift in Sources */,
+				032E5F871DBB17E500B2A6F2 /* CreateChatRoomController.swift in Sources */,
 				032E5F571DBAF53900B2A6F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

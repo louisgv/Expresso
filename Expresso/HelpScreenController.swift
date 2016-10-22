@@ -61,7 +61,7 @@ class HelpScreenController: UIViewController{
     
     func setupViews(){
         
-        view.addSubview(buttonContainer)
+       view.addSubview(buttonContainer)
        buttonContainer.addSubview(helpMeButton)
        buttonContainer.addSubview(helpOthersButton)
         
