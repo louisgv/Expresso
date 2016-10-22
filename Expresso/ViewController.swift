@@ -13,9 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
+        setupViews()
         checkUser()
         view.backgroundColor = .white
     }
+    
+    lazy var menuBar: MenuBar = {
+    let mb = MenuBar()
+    mb.translatesAutoresizingMaskIntoConstraints = false
+    return mb
+    }()
     
     
     lazy var helpScreen: HelpScreenController = {
@@ -51,6 +58,15 @@ class ViewController: UIViewController {
         let plusButton = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(createChatRoom))
         plusButton.tintColor = .white
         navigationItem.rightBarButtonItems = [plusButton]
+    }
+    
+    func setupViews(){
+        view.addSubview(menuBar)
+        
+        menuBar.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
+        menuBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        menuBar.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        menuBar.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
 
 }

@@ -9,9 +9,12 @@
 import UIKit
 
 
-class StressLevelCell: BaseCell {
+
+import UIKit
+
+class StressLevelCell: BaseCell{
     
-    let imageView: UIImageView = {
+    var imageView: UIImageView = {
         let iv = UIImageView()
         iv.image = UIImage(named: "sad")?.withRenderingMode(.alwaysTemplate)
         iv.tintColor = .blue
@@ -24,19 +27,16 @@ class StressLevelCell: BaseCell {
             imageView.tintColor = isHighlighted ? .white : .blue
         }
     }
-
     
-    override var isSelected: Bool {
+    override var isSelected: Bool{
         didSet{
-            imageView.tintColor = isHighlighted ? .white : .blue
+            imageView.tintColor = isSelected ? .white : .blue
         }
     }
-
     
-    override func setupViews() {
+    
+    override func setupViews(){
         super.setupViews()
-        
-        backgroundColor = .systemColor("blue")
         
         addSubview(imageView)
         
@@ -44,10 +44,10 @@ class StressLevelCell: BaseCell {
         imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 28).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 28).isActive = true
-
     }
+    
+    
 }
-
 
 class BaseCell: UICollectionViewCell {
     override init(frame: CGRect) {
