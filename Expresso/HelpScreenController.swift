@@ -78,7 +78,7 @@ class HelpScreenController: UIViewController{
     
     func setupNavBar(){
         navigationController?.navigationBar.isTranslucent = false
-        navigationItem.title = "How can we help?"
+        navigationItem.title = "How can we help you?"
         navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Helvetica", size: 18)!, NSForegroundColorAttributeName : UIColor.white]
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: navigationController, action: nil)
         navigationItem.leftBarButtonItem = backButton
