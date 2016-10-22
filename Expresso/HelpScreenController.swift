@@ -10,6 +10,9 @@ import UIKit
 
 class HelpScreenController: UIViewController{
     
+    
+    var vc = ViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -44,6 +47,7 @@ class HelpScreenController: UIViewController{
     
     func handleHelpMe(){
         self.navigationController!.popViewController(animated: true)
+        vc.createChatRoom()
     }
     
     func handleHelpOthers(){

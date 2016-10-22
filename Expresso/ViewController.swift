@@ -18,11 +18,23 @@ class ViewController: UIViewController {
     }
     
     
-    let helpScreen = HelpScreenController()
+    lazy var helpScreen: HelpScreenController = {
+        let controller = HelpScreenController()
+        controller.vc = self
+        return controller
+    }()
     
     func checkUser(){
+        
         navigationController?.pushViewController(helpScreen, animated: true)
 
+    }
+    
+    
+    
+    func createChatRoom(){
+        let createChatController = CreateChatRoomController()
+        navigationController?.pushViewController(createChatController, animated: true)
     }
     
     func setupNavBar(){
