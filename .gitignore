@@ -12,3 +12,9 @@ Expresso.xcworkspace/xcuserdata/solomonarnett.xcuserdatad/UserInterfaceState.xcu
 Expresso.xcworkspace/xcuserdata/solomonarnett.xcuserdatad/UserInterfaceState.xcuserstate
 
 Expresso/ViewController.swift
+
+Pods/Pods.xcodeproj/xcuserdata/solomonarnett.xcuserdatad/xcschemes/JSQMessagesViewController.xcscheme
+
+*.xcscheme
+
+Pods/Pods.xcodeproj/xcuserdata/solomonarnett.xcuserdatad/xcschemes/xcschememanagement.plist
