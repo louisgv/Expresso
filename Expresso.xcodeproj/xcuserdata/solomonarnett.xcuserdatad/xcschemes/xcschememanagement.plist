@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+<<<<<<< HEAD
+=======
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Expresso.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+>>>>>>> solo
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>032E5F521DBAF53900B2A6F2</key>
