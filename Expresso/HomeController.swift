@@ -192,8 +192,9 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     
-    func launchChatRoom(){
+    func launchChatRoom(_ uid: String){
         let chatController = ChatLogController(collectionViewLayout: UICollectionViewFlowLayout())
+        chatController.uid = uid
         navigationController?.pushViewController(chatController, animated: true)
     }
     

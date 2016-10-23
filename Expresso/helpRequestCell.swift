@@ -125,7 +125,7 @@ class helpRequestCell: BaseCell {
     }()
     
     func handleJoin(){
-        homeController.launchChatRoom()
+        homeController.launchChatRoom(uid!)
     }
     
     let joinSeparator: UIView = {

@@ -162,7 +162,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
             })
             
             
-            self.navigationController!.popViewController(animated: true)
+            self.navigationController!.popViewController(animated: false)
 
         }
         
