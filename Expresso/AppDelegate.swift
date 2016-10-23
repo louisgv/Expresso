@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,8 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
+        FIRApp.configure()
         UIApplication.shared.statusBarStyle = .lightContent
-        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        
+
+        window?.rootViewController = UINavigationController(rootViewController: HomeController())
 
         return true
     }
