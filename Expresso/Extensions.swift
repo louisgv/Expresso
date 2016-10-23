@@ -18,7 +18,7 @@ extension UIColor {
         case "main":
             return UIColor(red:106/255, green:80/255, blue:238/255, alpha:1.00)
         case "mild":
-            return UIColor(red:0.89, green:0.69, blue:0.00, alpha:1.00)
+            return UIColor(red:213/255, green:137/255, blue:48/255, alpha:1.00)
         case "sad":
             return UIColor(red:0.22, green:0.35, blue:0.43, alpha:1.00)
         case "purple":
