@@ -129,7 +129,8 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
             //outgoing blue
             cell.bubbleView.backgroundColor = ChatMessageCell.blueColor
             cell.textView.textColor = .white
-            
+            cell.profileImageView.isHidden = true
+
             cell.bubbleViewRightAnchor?.isActive = true
             cell.bubbleViewLeftAnchor?.isActive = false
             
@@ -137,7 +138,9 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
             //incoming gray
             cell.bubbleView.backgroundColor = UIColor.init(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1)
             cell.textView.textColor = .black
-            
+            cell.profileImageView.isHidden = false
+                
+                
             cell.bubbleViewRightAnchor?.isActive = false
             cell.bubbleViewLeftAnchor?.isActive = true
         }

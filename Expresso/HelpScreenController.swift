@@ -90,12 +90,21 @@ class HelpScreenController: UIViewController{
         return label
     }()
     
-    let emergencyContainer: UIView = {
+    lazy var emergencyContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .systemColor("purple")
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleCall)))
         return view
     }()
+    
+    let busPhone = 4049884543
+    
+    func handleCall(){
+        if let url = NSURL(string: "tel://\(busPhone)") {
+            UIApplication.shared.openURL(url as URL)
+        }
+    }
     
     let callHelpLabel: UILabel = {
         let label = UILabel()
