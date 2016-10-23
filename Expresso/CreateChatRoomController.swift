@@ -82,7 +82,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.layer.borderWidth = 1
-        tf.backgroundColor = .systemColor("purple")
+        tf.backgroundColor = .systemColor("white")
         tf.layer.borderColor = UIColor.systemColor("main").cgColor
         tf.font = UIFont.systemFont(ofSize: 20)
         tf.backgroundColor = .systemColor("purple")
@@ -260,7 +260,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     let stressButtonContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .systemColor("main")
+        view.backgroundColor = .white
         return view
     }()
     
