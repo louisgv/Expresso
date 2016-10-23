@@ -24,6 +24,11 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         view.backgroundColor = .white
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barTintColor = .systemColor("main")
+
+    }
+    
     
     func observeHelpRequests(){
         let ref = FIRDatabase.database().reference().child("help_requests")
@@ -153,7 +158,6 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         navigationItem.titleView = titleLabel
         
         navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.barTintColor = .systemColor("main")
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
         

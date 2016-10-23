@@ -322,7 +322,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         switch(color){
         case "sad":
             
-            UIView.animate(withDuration: 0.5, animations: { 
+            UIView.animate(withDuration: 0.3, animations: {
                 self.navigationController?.navigationBar.barTintColor = .systemColor("sad")
                 self.topicTextfield.backgroundColor = .systemColor("sad")
                 self.submitButton.backgroundColor = .systemColor("sad")
@@ -331,7 +331,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
             
         case "mild":
             
-            UIView.animate(withDuration: 0.5, animations: { 
+            UIView.animate(withDuration: 0.3, animations: {
                 self.navigationController?.navigationBar.barTintColor = .systemColor("mild")
                 self.topicTextfield.backgroundColor = .systemColor("mild")
                 self.submitButton.backgroundColor = .systemColor("mild")
@@ -340,7 +340,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
             
         case "angry":
             
-            UIView.animate(withDuration: 0.5, animations: { 
+            UIView.animate(withDuration: 0.3, animations: {
                 self.navigationController?.navigationBar.barTintColor = .systemColor("angry")
                 self.topicTextfield.backgroundColor = .systemColor("angry")
                 self.submitButton.backgroundColor = .systemColor("angry")
