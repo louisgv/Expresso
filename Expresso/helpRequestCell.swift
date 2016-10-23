@@ -19,6 +19,9 @@ import Firebase
 
 class helpRequestCell: BaseCell {
     
+    
+    var homeController = HomeController()
+    
     var uid: String?
     
     var helpRequest: helpRequest?{
@@ -107,17 +110,23 @@ class helpRequestCell: BaseCell {
     }()
     
     
-    let bottomButtonContainer: UILabel = {
+    lazy var bottomButtonContainer: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 18)
         label.backgroundColor = .white
         label.text = "JOIN"
         label.textColor = .systemColor("main")
+        label.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleJoin)))
+        label.isUserInteractionEnabled = true
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
 
     }()
+    
+    func handleJoin(){
+        homeController.launchChatRoom()
+    }
     
     let joinSeparator: UIView = {
        let view = UIView()

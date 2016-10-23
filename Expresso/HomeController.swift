@@ -108,6 +108,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         
         cell.helpRequest = requests[indexPath.item]
         cell.backgroundColor = .white
+        cell.homeController = self
         
         return cell
     }
@@ -153,7 +154,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
             FIRAuth.auth()?.signInAnonymously(){ (user, error) in
             }
         }
-        navigationController?.pushViewController(helpScreen, animated: true)
+        navigationController?.pushViewController(helpScreen, animated: false)
 
     }
     
@@ -187,7 +188,13 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func logout(){
-        navigationController?.pushViewController(helpScreen, animated: true)
+        navigationController?.pushViewController(helpScreen, animated: false)
+    }
+    
+    
+    func launchChatRoom(){
+        let chatController = ChatLogController(collectionViewLayout: UICollectionViewFlowLayout())
+        navigationController?.pushViewController(chatController, animated: true)
     }
     
     func setupViews(){

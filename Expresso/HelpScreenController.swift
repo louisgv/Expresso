@@ -109,7 +109,7 @@ class HelpScreenController: UIViewController{
     
     
     func handleHelpMe(){
-        self.navigationController!.popViewController(animated: true)
+        self.navigationController!.popViewController(animated: false)
         homeController.createChatRoom()
 
         
@@ -175,6 +175,12 @@ class HelpScreenController: UIViewController{
         callHelpLabel.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor).isActive = true
         callHelpLabel.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor).isActive = true
         callHelpLabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
+//        callHelpLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+//        callHelpLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        callHelpLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+//        callHelpLabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
         
         emergencyLabel.centerXAnchor.constraint(equalTo: emergencyContainer.centerXAnchor).isActive = true
         emergencyLabel.centerYAnchor.constraint(equalTo: emergencyContainer.centerYAnchor).isActive = true
