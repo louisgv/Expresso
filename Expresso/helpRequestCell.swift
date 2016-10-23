@@ -26,10 +26,26 @@ class helpRequestCell: BaseCell {
             announcementTitle.text = helpRequest?.title
             topicLabel.text = helpRequest?.stressLevel
             announcementPoster.text = helpRequest?.topic
+            //changeTopicLabelColor((helpRequest?.stressLevel)!)
             timestamp.text =  setupTime((helpRequest?.timestamp?.intValue)!)
             uid = helpRequest?.uid
         }
     }
+    
+    func changeTopicLabelColor(_ color: String){
+        switch(color){
+        case "SAD":
+            topicLabel.backgroundColor = .systemColor("sad")
+        case "UPSET":
+            topicLabel.backgroundColor = .systemColor("mild")
+        case "ENRAGED":
+            topicLabel.backgroundColor = .systemColor("angry")
+        default:
+            topicLabel.backgroundColor = .systemColor("main")
+        }
+
+    }
+    
     
     func setupTime(_ time: Int)->String {
         var currentTime = Int(NSDate().timeIntervalSince1970)
@@ -164,7 +180,7 @@ class helpRequestCell: BaseCell {
     
     let topicLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = UIColor(white: 0.8, alpha:1)
+        label.backgroundColor = .systemColor("main")
         label.text = "GENERAL"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 9)
