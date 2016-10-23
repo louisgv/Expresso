@@ -1,3 +1,4 @@
+
 //
 //  ChatLogController.swift
 //  Expresso
@@ -21,18 +22,155 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
         return textField
     }()
     
+    
+    var messages = [Message]()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        observeMessages()
+
+    }
+    
+    func observeMessages() {
+        guard let uid = FIRAuth.auth()?.currentUser?.uid else {
+            return
+        }
+        
+        
+        let userMessagesRef = FIRDatabase.database().reference().child("user-messages").child(uid)
+        userMessagesRef.observe(.childAdded, with: { (snapshot) in
+            
+            let messageId = snapshot.key
+            let messagesRef = FIRDatabase.database().reference().child("messages").child(messageId)
+            messagesRef.observeSingleEvent(of: .value, with: { (snapshot) in
+                
+                guard let dictionary = snapshot.value as? [String: AnyObject] else {
+                    return
+                }
+                
+                let message = Message()
+                
+                if let text = dictionary["text"] as? String!{
+                    message.text = text
+                }
+                
+                if let fromId = dictionary["fromId"] as? String!{
+                    message.fromId = fromId
+                }
+                if let toId = dictionary["toId"] as? String!{
+                    message.toId = toId
+                }
+                if let timestamp = dictionary["timestamp"] as! NSNumber?{
+                    message.timestamp = timestamp
+                }
+
+                
+                self.messages.append(message)
+                
+                
+                print(message)
+//              
+                
+                
+//                if message.chatPartnerId() == uid {
+//                    self.messages.append(message)
+//                }
+                
+                DispatchQueue.main.async {
+                    self.collectionView?.reloadData()
+                }
+                
+                }, withCancel
+                : nil)
+            
+            }, withCancel: nil)
+    }
+    
+    let cellId = "cellId"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        collectionView?.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 58, right: 0)
+        collectionView?.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
+
+        
+
         navigationItem.title = "Chat Log Controller"
-        
+        navigationController?.navigationBar.tintColor = .white
+
         collectionView?.backgroundColor = .white
-        
+        collectionView?.alwaysBounceVertical = true
+        collectionView?.backgroundColor = .white
+        collectionView?.register(ChatMessageCell.self, forCellWithReuseIdentifier: cellId)
+
         setupInputComponents()
 
     }
     
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return messages.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! ChatMessageCell
+        
+        let message = messages[indexPath.item]
+        cell.textView.text = message.text
+        
+        cell.bubbleWidthAnchor?.constant = estimateFrameForText(message.text!).width + 32
+        setupCell(cell: cell, message: message)
+
+        return cell
+    }
+    
+    private func setupCell(cell: ChatMessageCell, message: Message) {
+            if message.fromId == FIRAuth.auth()?.currentUser?.uid {
+            //outgoing blue
+            cell.bubbleView.backgroundColor = ChatMessageCell.blueColor
+            cell.textView.textColor = .white
+            
+            cell.bubbleViewRightAnchor?.isActive = true
+            cell.bubbleViewLeftAnchor?.isActive = false
+            
+        } else {
+            //incoming gray
+            cell.bubbleView.backgroundColor = UIColor.init(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1)
+            cell.textView.textColor = .black
+            
+            cell.bubbleViewRightAnchor?.isActive = false
+            cell.bubbleViewLeftAnchor?.isActive = true
+        }
+    }
+    
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        collectionView?.collectionViewLayout.invalidateLayout()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+
+        var height: CGFloat = 80
+        
+        //get estimated height somehow????
+        if let text = messages[indexPath.item].text {
+            height = estimateFrameForText(text).height + 20
+        }
+        
+        return CGSize(width: view.frame.width, height: height)
+
+    }
+    
+    private func estimateFrameForText(_ text: String) -> CGRect {
+        let size = CGSize(width: 200, height: 1000)
+        let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
+        return NSString(string: text).boundingRect(with: size, options: options, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16)], context: nil)
+    }
+    
     func setupInputComponents(){
         let containerView = UIView()
+        containerView.backgroundColor = .white
+
         containerView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(containerView)
@@ -78,13 +216,12 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
     func handleSend() {
         let ref = FIRDatabase.database().reference().child("messages")
         let childRef = ref.childByAutoId()
-        //is it there best thing to include the name inside of the message node
+
         let toId = uid!
         let fromId = FIRAuth.auth()!.currentUser!.uid
         let currentTime:Int = Int(NSDate().timeIntervalSince1970)
         
         let values = ["text": inputTextField.text!, "toId": toId, "fromId": fromId, "timestamp": currentTime] as [String : Any]
-        //        childRef.updateChildValues(values)
         
         childRef.updateChildValues(values) { (error, ref) in
             if error != nil {

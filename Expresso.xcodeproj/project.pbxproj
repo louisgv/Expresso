@@ -20,6 +20,9 @@
 		032E5F911DBC184C00B2A6F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 032E5F901DBC184C00B2A6F2 /* GoogleService-Info.plist */; };
 		032E5F961DBC482B00B2A6F2 /* helpRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F951DBC482B00B2A6F2 /* helpRequestCell.swift */; };
 		032E5F981DBC4A0F00B2A6F2 /* helpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F971DBC4A0F00B2A6F2 /* helpRequest.swift */; };
+		037FCBEF1DBCC3A4002EA8A4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037FCBEE1DBCC3A4002EA8A4 /* ChatViewController.swift */; };
+		037FCBF11DBCD06F002EA8A4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037FCBF01DBCD06F002EA8A4 /* Message.swift */; };
+		037FCBF31DBCD395002EA8A4 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037FCBF21DBCD395002EA8A4 /* ChatMessageCell.swift */; };
 		03E55E261DBC9BA8006AD476 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E55E251DBC9BA8006AD476 /* ChatLogController.swift */; };
 		257793BC208098443E335343 /* Pods_ExpressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4CE723ADE82BC7829D108 /* Pods_ExpressoTests.framework */; };
 		6D921903D57A55FDC058EA57 /* Pods_ExpressoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615936A55EF85F99C8E7E210 /* Pods_ExpressoUITests.framework */; };
@@ -64,6 +67,9 @@
 		032E5F921DBC218400B2A6F2 /* Expresso.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expresso.entitlements; sourceTree = "<group>"; };
 		032E5F951DBC482B00B2A6F2 /* helpRequestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helpRequestCell.swift; sourceTree = "<group>"; };
 		032E5F971DBC4A0F00B2A6F2 /* helpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helpRequest.swift; sourceTree = "<group>"; };
+		037FCBEE1DBCC3A4002EA8A4 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		037FCBF01DBCD06F002EA8A4 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		037FCBF21DBCD395002EA8A4 /* ChatMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		03E55E251DBC9BA8006AD476 /* ChatLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
 		2E99395227C1389408C7E98A /* Pods-Expresso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expresso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Expresso/Pods-Expresso.debug.xcconfig"; sourceTree = "<group>"; };
 		3CB4CE723ADE82BC7829D108 /* Pods_ExpressoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpressoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				032E5F971DBC4A0F00B2A6F2 /* helpRequest.swift */,
+				037FCBF01DBCD06F002EA8A4 /* Message.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 				03E55E251DBC9BA8006AD476 /* ChatLogController.swift */,
 				032E5F861DBB17E500B2A6F2 /* CreateChatController.swift */,
 				032E5F841DBAF7EC00B2A6F2 /* HelpScreenController.swift */,
+				037FCBEE1DBCC3A4002EA8A4 /* ChatViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -185,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				032E5F951DBC482B00B2A6F2 /* helpRequestCell.swift */,
+				037FCBF21DBCD395002EA8A4 /* ChatMessageCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -493,6 +502,9 @@
 				032E5F591DBAF53900B2A6F2 /* HomeController.swift in Sources */,
 				032E5F871DBB17E500B2A6F2 /* CreateChatController.swift in Sources */,
 				032E5F981DBC4A0F00B2A6F2 /* helpRequest.swift in Sources */,
+				037FCBF31DBCD395002EA8A4 /* ChatMessageCell.swift in Sources */,
+				037FCBF11DBCD06F002EA8A4 /* Message.swift in Sources */,
+				037FCBEF1DBCC3A4002EA8A4 /* ChatViewController.swift in Sources */,
 				032E5F571DBAF53900B2A6F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +578,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -615,6 +628,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

@@ -14,20 +14,33 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     let cellId = "cellId"
     var requests = [helpRequest]()
     
+    
+    var ref: FIRDatabaseReference!
+    var handle: UInt!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         setupNavBar()
         setupViews()
         setupCollectionViews()
         checkUser()
-        observeHelpRequests()
         view.backgroundColor = .white
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController?.navigationBar.barTintColor = .systemColor("main")
-        //refreshFeed()
+        refreshFeed()
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        ref = FIRDatabase.database().reference().child("help_requests")
+        ref.removeObserver(withHandle: handle)
+    }
+    
     
     func refreshFeed(){
         requests.removeAll()
@@ -36,13 +49,10 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     func observeHelpRequests(){
         let ref = FIRDatabase.database().reference().child("help_requests")
-        ref.observe(.childAdded, with: { (snapshot) in
+        handle = ref.observe(.childAdded, with: { (snapshot) in
             
             
             if let dictionary = snapshot.value as? [String: Any]{
-                
-                
-                print(snapshot)
                 
                 let request = helpRequest()
                 
@@ -196,6 +206,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         let chatController = ChatLogController(collectionViewLayout: UICollectionViewFlowLayout())
         chatController.uid = uid
         navigationController?.pushViewController(chatController, animated: true)
+        
     }
     
     func setupViews(){
@@ -217,7 +228,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         collectionView.topAnchor.constraint(equalTo: placeholderContainer.bottomAnchor).isActive = true
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         collectionView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        collectionView.heightAnchor.constraint(equalToConstant: view.frame.height - 40).isActive = true
+        collectionView.heightAnchor.constraint(equalToConstant: view.frame.height - 105).isActive = true
         
     }
     
