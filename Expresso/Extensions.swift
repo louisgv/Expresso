@@ -22,7 +22,7 @@ extension UIColor {
         case "sad":
             return UIColor(red:0.22, green:0.35, blue:0.43, alpha:1.00)
         case "purple":
-            return UIColor(red:0.30, green:0.29, blue:0.43, alpha:1.00)
+            return UIColor(red:49/255, green:37/255, blue:110/255, alpha:1.00)
         default:
             return .white
         }
