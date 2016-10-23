@@ -106,10 +106,12 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
 
     func setupCollectionViews(){
         collectionView.register(helpRequestCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.backgroundColor = UIColor(white: 0.9, alpha: 1)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let knownHeight: CGFloat = 35 + 40 
+        let knownHeight: CGFloat = 35 + 40
         
         if let requestTitle = requests[indexPath.item].title {
             
