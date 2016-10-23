@@ -26,7 +26,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.barTintColor = .systemColor("main")
-        refreshFeed()
+        //refreshFeed()
     }
     
     func refreshFeed(){

@@ -283,7 +283,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func handleCryingButtonTap(){
         
-        stressLevel = "CRYING"
+        stressLevel = "UPSET"
         sadButton.tintColor = .lightGray
         cryingButton.tintColor = .systemColor("sad")
         upsetButton.tintColor = .lightGray
@@ -292,7 +292,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     func handleUpsetButtonTap(){
-        stressLevel = "UPSET"
+        stressLevel = "ENRAGED"
         sadButton.tintColor = .lightGray
         cryingButton.tintColor = .lightGray
         upsetButton.tintColor = .systemColor("angry")

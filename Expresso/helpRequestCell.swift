@@ -214,7 +214,7 @@ class helpRequestCell: BaseCell {
         
         topicLabel.topAnchor.constraint(equalTo: announcementTitle.bottomAnchor, constant: -2).isActive = true
         topicLabel.leftAnchor.constraint(equalTo: announcementTitle.leftAnchor, constant: 6).isActive = true
-        topicLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        topicLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
         topicLabel.heightAnchor.constraint(equalToConstant: 15).isActive = true
         
         
