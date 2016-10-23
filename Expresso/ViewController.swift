@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         navigationItem.titleView = titleLabel
         
         navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.barTintColor = UIColor(red:0.14, green:0.32, blue:0.95, alpha:1.00)
+        navigationController?.navigationBar.barTintColor = .systemColor("main")
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
         

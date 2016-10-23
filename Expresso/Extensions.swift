@@ -13,20 +13,16 @@ extension UIColor {
     static func systemColor(_ color: String) -> UIColor{
         
         switch (color){
-        case "red":
-            return UIColor(red:0.83, green:0.18, blue:0.18, alpha:1.00)
-        case "darkRed":
-            return UIColor(red:0.57, green:0.07, blue:0.04, alpha:1.00)
-        case "blue":
-            return UIColor(red:0.14, green:0.32, blue:0.95, alpha:1.00)
-        case "orange":
-            return UIColor(red:0.96, green:0.32, blue:0.12, alpha:1.00)
-        case "darkOrange":
-            return UIColor(red:0.75, green:0.21, blue:0.05, alpha:1.00)
-        case "green":
-            return UIColor(red:0.00, green:0.59, blue:0.53, alpha:1.00)
-        case "darkGreen":
-            return UIColor(red:0.00, green:0.30, blue:0.25, alpha:1.00)
+        case "angry":
+            return UIColor(red:0.41, green:0.20, blue:0.16, alpha:1.00)
+        case "main":
+            return UIColor(red:106/255, green:80/255, blue:238/255, alpha:1.00)
+        case "mild":
+            return UIColor(red:0.89, green:0.69, blue:0.00, alpha:1.00)
+        case "sad":
+            return UIColor(red:0.22, green:0.35, blue:0.43, alpha:1.00)
+        case "purple":
+            return UIColor(red:0.30, green:0.29, blue:0.43, alpha:1.00)
         default:
             return .white
         }
