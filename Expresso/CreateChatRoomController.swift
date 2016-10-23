@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
@@ -133,6 +134,35 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     func handleButtonTap() {
         
         if checkInputValues(){
+            
+            
+            let uid = FIRAuth.auth()?.currentUser?.uid
+            
+            let ref = FIRDatabase.database().reference().child("help_requests")
+            let childRef = ref.child(uid!)
+            
+            let currentTime:Int = Int(NSDate().timeIntervalSince1970)
+            
+            
+            submitButton.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+            UIView.animate(withDuration: 2.0,
+                           delay: 0,
+                           usingSpringWithDamping: 0.9,
+                           initialSpringVelocity: 0.5,
+                           options: UIViewAnimationOptions.allowUserInteraction,
+                           animations: {
+                            self.submitButton.transform = CGAffineTransform.identity
+                }, completion:  {
+                    (value: Bool) in
+                    
+                    
+                        let values = ["title": self.inputTextView.text, "stressLevel": self.stressLevel, "timestamp" : currentTime, "topic": self.topicTextfield.text!] as [String : Any]
+                        
+                        childRef.updateChildValues(values)
+                    
+            })
+            
+            
             self.navigationController!.popViewController(animated: true)
 
         }

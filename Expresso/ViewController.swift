@@ -28,7 +28,6 @@ class ViewController: UIViewController {
     func checkUser(){
         if FIRAuth.auth()?.currentUser?.uid == nil {
             FIRAuth.auth()?.signInAnonymously(){ (user, error) in
-                
             }
         }
         navigationController?.pushViewController(helpScreen, animated: true)

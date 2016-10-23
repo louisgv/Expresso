@@ -18,6 +18,7 @@
 		032E5F871DBB17E500B2A6F2 /* CreateChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F861DBB17E500B2A6F2 /* CreateChatRoomController.swift */; };
 		032E5F891DBB325B00B2A6F2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F881DBB325B00B2A6F2 /* Extensions.swift */; };
 		032E5F911DBC184C00B2A6F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 032E5F901DBC184C00B2A6F2 /* GoogleService-Info.plist */; };
+		032E5F941DBC32EE00B2A6F2 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E5F931DBC32EE00B2A6F2 /* HomeController.swift */; };
 		257793BC208098443E335343 /* Pods_ExpressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4CE723ADE82BC7829D108 /* Pods_ExpressoTests.framework */; };
 		6D921903D57A55FDC058EA57 /* Pods_ExpressoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615936A55EF85F99C8E7E210 /* Pods_ExpressoUITests.framework */; };
 		BBEC7E2636554F0FAD614406 /* Pods_Expresso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CE5C185D2FEDECA89732B0 /* Pods_Expresso.framework */; };
@@ -59,6 +60,7 @@
 		032E5F881DBB325B00B2A6F2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		032E5F901DBC184C00B2A6F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		032E5F921DBC218400B2A6F2 /* Expresso.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expresso.entitlements; sourceTree = "<group>"; };
+		032E5F931DBC32EE00B2A6F2 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		2E99395227C1389408C7E98A /* Pods-Expresso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expresso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Expresso/Pods-Expresso.debug.xcconfig"; sourceTree = "<group>"; };
 		3CB4CE723ADE82BC7829D108 /* Pods_ExpressoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpressoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		615936A55EF85F99C8E7E210 /* Pods_ExpressoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpressoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 				032E5F561DBAF53900B2A6F2 /* AppDelegate.swift */,
 				032E5F881DBB325B00B2A6F2 /* Extensions.swift */,
 				032E5F581DBAF53900B2A6F2 /* ViewController.swift */,
+				032E5F931DBC32EE00B2A6F2 /* HomeController.swift */,
 				032E5F861DBB17E500B2A6F2 /* CreateChatRoomController.swift */,
 				032E5F841DBAF7EC00B2A6F2 /* HelpScreenController.swift */,
 				032E5F5A1DBAF53900B2A6F2 /* Main.storyboard */,
@@ -455,6 +458,7 @@
 			files = (
 				032E5F891DBB325B00B2A6F2 /* Extensions.swift in Sources */,
 				032E5F851DBAF7EC00B2A6F2 /* HelpScreenController.swift in Sources */,
+				032E5F941DBC32EE00B2A6F2 /* HomeController.swift in Sources */,
 				032E5F591DBAF53900B2A6F2 /* ViewController.swift in Sources */,
 				032E5F871DBB17E500B2A6F2 /* CreateChatRoomController.swift in Sources */,
 				032E5F571DBAF53900B2A6F2 /* AppDelegate.swift in Sources */,
