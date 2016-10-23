@@ -9,7 +9,8 @@ import UIKit
 class HelpScreenController: UIViewController{
     
     
-    var vc = ViewController()
+    var homeController = HomeController()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,7 +70,7 @@ class HelpScreenController: UIViewController{
     
     func handleHelpMe(){
         self.navigationController!.popViewController(animated: true)
-        vc.createChatRoom()
+        //vc.createChatRoom()
     }
     
     func handleHelpOthers(){
