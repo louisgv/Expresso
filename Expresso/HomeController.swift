@@ -26,9 +26,13 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.barTintColor = .systemColor("main")
-
+        refreshFeed()
     }
     
+    func refreshFeed(){
+        requests.removeAll()
+        observeHelpRequests()
+    }
     
     func observeHelpRequests(){
         let ref = FIRDatabase.database().reference().child("help_requests")
@@ -116,7 +120,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let knownHeight: CGFloat = 35 + 40
+        let knownHeight: CGFloat = 35 + 40 + 28
         
         if let requestTitle = requests[indexPath.item].title {
             

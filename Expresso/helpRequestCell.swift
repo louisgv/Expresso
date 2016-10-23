@@ -24,7 +24,8 @@ class helpRequestCell: BaseCell {
     var helpRequest: helpRequest?{
         didSet{
             announcementTitle.text = helpRequest?.title
-            topicLabel.text = helpRequest?.topic
+            topicLabel.text = helpRequest?.stressLevel
+            announcementPoster.text = helpRequest?.topic
             timestamp.text =  setupTime((helpRequest?.timestamp?.intValue)!)
             uid = helpRequest?.uid
         }
@@ -89,10 +90,34 @@ class helpRequestCell: BaseCell {
         return tv
     }()
     
-    lazy var bottomButtonContainer: UIView = {
-        let view = UIView()
+    
+    let bottomButtonContainer: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.backgroundColor = .white
+        label.text = "JOIN"
+        label.textColor = .systemColor("main")
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+
+    }()
+    
+    let joinSeparator: UIView = {
+       let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .lightGray
         return view
+    }()
+    
+    let joinLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.textColor = .lightGray
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.sizeToFit()
+        return label
     }()
     
     lazy var commentButtonContainer: UIView = {
@@ -163,6 +188,10 @@ class helpRequestCell: BaseCell {
         announcementInfoContainer.addSubview(timestamp)
         announcementInfoContainer.addSubview(announcementPoster)
         
+        addSubview(bottomButtonContainer)
+        
+        addSubview(joinSeparator)
+        
         announcementInfoContainer.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         announcementInfoContainer.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         announcementInfoContainer.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
@@ -170,7 +199,7 @@ class helpRequestCell: BaseCell {
         
         timestamp.leftAnchor.constraint(equalTo: announcementInfoContainer.leftAnchor, constant: 12).isActive = true
         timestamp.topAnchor.constraint(equalTo: announcementInfoContainer.topAnchor, constant:6).isActive = true
-        timestamp.widthAnchor.constraint(equalToConstant: 100)
+        timestamp.widthAnchor.constraint(equalToConstant: 50)
         timestamp.heightAnchor.constraint(equalToConstant: 30)
         
         announcementPoster.leftAnchor.constraint(equalTo: timestamp.rightAnchor).isActive = true
@@ -187,6 +216,17 @@ class helpRequestCell: BaseCell {
         topicLabel.leftAnchor.constraint(equalTo: announcementTitle.leftAnchor, constant: 6).isActive = true
         topicLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
         topicLabel.heightAnchor.constraint(equalToConstant: 15).isActive = true
+        
+        
+        joinSeparator.topAnchor.constraint(equalTo: topicLabel.bottomAnchor, constant: 10).isActive = true
+        joinSeparator.centerXAnchor.constraint(equalTo: bottomButtonContainer.centerXAnchor).isActive = true
+        joinSeparator.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.94).isActive = true
+        joinSeparator.heightAnchor.constraint(equalToConstant: 0.2).isActive = true
+        
+        bottomButtonContainer.topAnchor.constraint(equalTo: joinSeparator.bottomAnchor).isActive = true
+        bottomButtonContainer.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        bottomButtonContainer.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
+        bottomButtonContainer.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         //Announcement Body Text Constraints
         
