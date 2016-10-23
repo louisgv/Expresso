@@ -85,6 +85,15 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         return view
     }()
     
+    let filterLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "  Filter By: All"
+        label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 18)
+        return label
+    }()
+    
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         var cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -156,10 +165,12 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     func setupNavBar(){
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.height))
-        titleLabel.text = " Help Out"
+        titleLabel.text = " Expresso"
         titleLabel.textColor = .white
         titleLabel.font = UIFont.systemFont(ofSize: 20)
         navigationItem.titleView = titleLabel
+        
+        titleLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(logout)))
         
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -167,17 +178,33 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         
         let plusButton = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(createChatRoom))
         plusButton.tintColor = .white
-        navigationItem.rightBarButtonItems = [plusButton]
+        
+        let moreButton = UIBarButtonItem(image: UIImage(named: "menu")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(logout))
+        moreButton.tintColor = .white
+
+        
+        navigationItem.rightBarButtonItems =  [moreButton, plusButton]
+    }
+    
+    func logout(){
+        navigationController?.pushViewController(helpScreen, animated: true)
     }
     
     func setupViews(){
         view.addSubview(placeholderContainer)
+        placeholderContainer.addSubview(filterLabel)
         view.addSubview(collectionView)
         
         placeholderContainer.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
         placeholderContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         placeholderContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         placeholderContainer.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        
+        filterLabel.leftAnchor.constraint(equalTo: placeholderContainer.leftAnchor, constant: 6).isActive = true
+        filterLabel.centerYAnchor.constraint(equalTo: placeholderContainer.centerYAnchor).isActive = true
+        filterLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5).isActive = true
+        filterLabel.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+        
         
         collectionView.topAnchor.constraint(equalTo: placeholderContainer.bottomAnchor).isActive = true
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
