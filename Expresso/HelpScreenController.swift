@@ -81,10 +81,38 @@ class HelpScreenController: UIViewController{
         return logoimg
     }()
     
+    let emergencyLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Call Suicide Hotline"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 22)
+        return label
+    }()
+    
+    let emergencyContainer: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .systemColor("purple")
+        return view
+    }()
+    
+    let callHelpLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Emergency?  Dial 911!"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .lightGray
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 24)
+        return label
+    }()
+    
     
     func handleHelpMe(){
         self.navigationController!.popViewController(animated: true)
-        //vc.createChatRoom()
+        homeController.createChatRoom()
+
+        
     }
     
     func handleHelpOthers(){
@@ -106,13 +134,14 @@ class HelpScreenController: UIViewController{
         imageViewBackground.addSubview(imageView)
         
         view.addSubview(buttonContainer)
-        buttonContainer.addSubview(helpMeButton)
-        buttonContainer.addSubview(helpOthersButton)
+        view.addSubview(helpOthersButton)
+        view.addSubview(helpMeButton)
+        view.addSubview(callHelpLabel)
         
-//        imageViewBackground.bottomAnchor.constraint(equalTo: helpMeButton.topAnchor, constant: -50).isActive = true
-//        imageViewBackground.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        imageViewBackground.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-//        imageViewBackground.heightAnchor.constraint(equalTo: helpMeButton.heightAnchor).isActive = true
+        
+        view.addSubview(emergencyContainer)
+        emergencyContainer.addSubview(emergencyLabel)
+        
         
         imageViewBackground.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
         imageViewBackground.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -124,16 +153,33 @@ class HelpScreenController: UIViewController{
         imageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
+
         
-        buttonContainer.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        buttonContainer.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        buttonContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        buttonContainer.heightAnchor.constraint(equalToConstant: 196).isActive = true
+        helpOthersButton.bottomAnchor.constraint(equalTo: emergencyContainer.topAnchor, constant: -24).isActive = true
+        helpOthersButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
+        helpOthersButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
+        helpOthersButton.heightAnchor.constraint(equalToConstant: 80).isActive = true
         
-        helpMeButton.topAnchor.constraint(equalTo: buttonContainer.topAnchor, constant: 12).isActive = true
-        helpMeButton.leftAnchor.constraint(equalTo: buttonContainer.leftAnchor, constant: 6).isActive = true
-        helpMeButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
+        helpMeButton.bottomAnchor.constraint(equalTo: helpOthersButton.topAnchor, constant: -6).isActive = true
+        helpMeButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
+        helpMeButton.widthAnchor.constraint(equalTo: helpOthersButton.widthAnchor).isActive = true
         helpMeButton.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
+        emergencyContainer.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        emergencyContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        emergencyContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        emergencyContainer.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
+        
+        callHelpLabel.topAnchor.constraint(equalTo: imageViewBackground.bottomAnchor, constant: 18).isActive = true
+        callHelpLabel.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor).isActive = true
+        callHelpLabel.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor).isActive = true
+        callHelpLabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        
+        emergencyLabel.centerXAnchor.constraint(equalTo: emergencyContainer.centerXAnchor).isActive = true
+        emergencyLabel.centerYAnchor.constraint(equalTo: emergencyContainer.centerYAnchor).isActive = true
+        emergencyContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        emergencyContainer.heightAnchor.constraint(equalTo: emergencyContainer.heightAnchor).isActive = true
         
         //ios9 constraints, x,y,width, height
         
