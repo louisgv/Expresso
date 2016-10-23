@@ -195,7 +195,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         return picker
     }()
     
-    let topicPickerData = ["Relationships", "High Stress", "Contemplating Suicide"]
+    let topicPickerData = ["Need Motivation", "Relationships", "Life Sucks (FML)", "Feeling Depressed", "Embarrased", "Hurting", "Mourning a Loss", "No H8", "Cheated On", "Drunk Text Us Instead", "Atlanta Traffic", "Physically Abused", "Emotionally Abused", "Financial Problems", "Contemplating Suicide", "Other"]
     
     lazy var doneButton: UIBarButtonItem = {
         var btn = UIBarButtonItem()
