@@ -74,7 +74,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     let inputsContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .systemColor("blue")
+        view.backgroundColor = .systemColor("main")
         return view
     }()
     
@@ -82,10 +82,10 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.layer.borderWidth = 1
-        tf.backgroundColor = .blue
-        tf.layer.borderColor = UIColor.blue.cgColor
+        tf.backgroundColor = .systemColor("purple")
+        tf.layer.borderColor = UIColor.systemColor("main").cgColor
         tf.font = UIFont.systemFont(ofSize: 20)
-        tf.backgroundColor = .blue
+        tf.backgroundColor = .systemColor("purple")
         tf.textColor = .white
         tf.textAlignment = .center
         tf.layer.cornerRadius = 20
@@ -107,7 +107,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         button.setTitle("1 On 1 Help", for: .normal)
         button.addTarget(self, action: #selector(handleButtonOne), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .systemColor("blue")
+        button.backgroundColor = .systemColor("main")
         button.layer.cornerRadius = 25
         button.layer.borderColor = UIColor.blue.cgColor
         return button
@@ -122,7 +122,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         button.setTitle("Submit Request", for: .normal)
         button.addTarget(self, action: #selector(handleButtonTap), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .systemColor("blue")
+        button.backgroundColor = .systemColor("main")
         button.layer.cornerRadius = 25
         button.setTitleColor(.blue, for: .normal)
         button.layer.borderColor = UIColor.blue.cgColor
@@ -196,7 +196,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         return picker
     }()
     
-    let topicPickerData = ["Suicidal", "High Stress", "Relationships"]
+    let topicPickerData = ["Relationships", "High Stress", "Contemplating Suicide"]
     
     lazy var doneButton: UIBarButtonItem = {
         var btn = UIBarButtonItem()
@@ -260,7 +260,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     let stressButtonContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .systemColor("blue")
+        view.backgroundColor = .systemColor("main")
         return view
     }()
     
@@ -268,7 +268,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         let button = UIButton()
         button.setImage(UIImage(named: "sad")?.withRenderingMode(.alwaysTemplate), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.tintColor = .blue
+        button.tintColor = .systemColor("purple")
         button.addTarget(self, action: #selector(handleSadButtonTap), for: .touchUpInside)
         return button
     }()
@@ -277,23 +277,23 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         
         stressLevel = "SAD"
         sadButton.tintColor = .white
-        cryingButton.tintColor = .blue
-        upsetButton.tintColor = .blue
+        cryingButton.tintColor = .systemColor("purple")
+        upsetButton.tintColor = .systemColor("purple")
     }
     
     func handleCryingButtonTap(){
         
         stressLevel = "CRYING"
-        sadButton.tintColor = .blue
+        sadButton.tintColor = .systemColor("purple")
         cryingButton.tintColor = .white
-        upsetButton.tintColor = .blue
-
+        upsetButton.tintColor = .systemColor("purple")
+        
     }
     
     func handleUpsetButtonTap(){
         stressLevel = "UPSET"
-        sadButton.tintColor = .blue
-        cryingButton.tintColor = .blue
+        sadButton.tintColor = .systemColor("purple")
+        cryingButton.tintColor = .systemColor("purple")
         upsetButton.tintColor = .white
 
     }
@@ -302,7 +302,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         let button = UIButton()
         button.setImage(UIImage(named: "crying")?.withRenderingMode(.alwaysTemplate), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.tintColor = .blue
+        button.tintColor = .systemColor("purple")
         button.addTarget(self, action: #selector(handleCryingButtonTap), for: .touchUpInside)
         return button
     }()
@@ -311,7 +311,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         let button = UIButton()
         button.setImage(UIImage(named: "mad")?.withRenderingMode(.alwaysTemplate), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.tintColor = .blue
+        button.tintColor = .systemColor("purple")
         button.addTarget(self, action: #selector(handleUpsetButtonTap), for: .touchUpInside)
         return button
     }()
@@ -332,7 +332,8 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     
     let downIndicator: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "down")
+        iv.image = UIImage(named: "down")?.withRenderingMode(.alwaysTemplate)
+        iv.tintColor = .systemColor("main")
         iv.contentMode = .scaleAspectFit
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
