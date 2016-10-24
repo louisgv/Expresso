@@ -11,6 +11,9 @@ import Firebase
 
 class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
+    
+    var homeController = HomeController()
+    
     let cellId = "cellId"
     let imageNames = ["sad", "crying", "mad"]
     var stressLevel:String = ""
@@ -21,7 +24,23 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         setupNavBar()
         setupViews()
         setupInputs()
-        }
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        resetView()
+    }
+    
+    func resetView(){
+        sadButton.tintColor = .systemColor("main")
+        cryingButton.tintColor = .systemColor("main")
+        upsetButton.tintColor = .systemColor("main")
+        submitButton.backgroundColor = .systemColor("main")
+        navigationController?.navigationBar.barTintColor = .systemColor("main")
+        topicTextfield.backgroundColor = .systemColor("main")
+        
+    }
     
     func setupInputs(){
         hideKeyboardWhenTappedAround()
@@ -101,24 +120,10 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         return tv
     }()
     
-    lazy var oneHelp: UIButton = {
-        let button = UIButton()
-        button.setTitle("1 On 1 Help", for: .normal)
-        button.addTarget(self, action: #selector(handleButtonOne), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .systemColor("main")
-        button.layer.cornerRadius = 25
-        button.layer.borderColor = UIColor.blue.cgColor
-        return button
-    }()
-    func handleButtonOne() {
-    print(123)
-    }
-    
-    
     lazy var submitButton: UIButton = {
         let button = UIButton()
         button.setTitle("Submit Request", for: .normal)
+        button.titleLabel!.font =  UIFont(name: "Futura", size: 24)
         button.addTarget(self, action: #selector(handleButtonTap), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .systemColor("main")
@@ -134,11 +139,14 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         
         if checkInputValues(){
             
-            
-            let uid = FIRAuth.auth()?.currentUser?.uid
+            let uid = FIRAuth.auth()!.currentUser!.uid
             
             let ref = FIRDatabase.database().reference().child("help_requests")
-            let childRef = ref.child(uid!)
+            let childRef = ref.child(uid)
+            
+            let chatRoomRef = FIRDatabase.database().reference().child("chatrooms")
+            let childChatRoomRef = chatRoomRef.childByAutoId()
+            let uidForChatRoom = childChatRoomRef.key
             
             let currentTime:Int = Int(NSDate().timeIntervalSince1970)
             
@@ -155,14 +163,19 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
                     (value: Bool) in
                     
                     
-                        let values = ["title": self.inputTextView.text, "stressLevel": self.stressLevel, "timestamp" : currentTime, "topic": self.topicTextfield.text!] as [String : Any]
+                    let values = ["title": self.inputTextView.text, "stressLevel": self.stressLevel, "timestamp" : currentTime, "topic": self.topicTextfield.text!, "roomId": uidForChatRoom] as [String : Any]
                         
                         childRef.updateChildValues(values)
+                    let chatRoomValues = ["posterId": uid, "title": "Chatroom Title", "roomLimit": 5] as [String : Any]
+                    childChatRoomRef.updateChildValues(chatRoomValues)
+
                     
             })
             
             
             self.navigationController!.popViewController(animated: false)
+            homeController.navigationController?.navigationBar.barTintColor = .systemColor("man")
+            homeController.launchChatRoom(uidForChatRoom)
 
         }
         
@@ -252,7 +265,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
     func setupNavBar(){
         navigationController?.navigationBar.isTranslucent = false
         navigationItem.title = "Request help"
-        navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 18)!, NSForegroundColorAttributeName : UIColor.white]
+        navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Futura", size: 24)!, NSForegroundColorAttributeName : UIColor.white]
         navigationController?.navigationBar.tintColor = .white
     }
     
@@ -267,7 +280,8 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         let button = UIButton()
         button.setImage(UIImage(named: "sad")?.withRenderingMode(.alwaysTemplate), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.tintColor = .systemColor("purple")
+        //button.tintColor = .systemColor("purple")
+        button.tintColor = .lightGray
         button.addTarget(self, action: #selector(handleSadButtonTap), for: .touchUpInside)
         return button
     }()
@@ -304,7 +318,8 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         let button = UIButton()
         button.setImage(UIImage(named: "crying")?.withRenderingMode(.alwaysTemplate), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.tintColor = .systemColor("purple")
+        button.tintColor = .lightGray
+        //button.tintColor = .systemColor("purple")
         button.addTarget(self, action: #selector(handleCryingButtonTap), for: .touchUpInside)
         return button
     }()
@@ -313,7 +328,8 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         let button = UIButton()
         button.setImage(UIImage(named: "mad")?.withRenderingMode(.alwaysTemplate), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.tintColor = .systemColor("purple")
+        button.tintColor = .lightGray
+        //button.tintColor = .systemColor("purple")
         button.addTarget(self, action: #selector(handleUpsetButtonTap), for: .touchUpInside)
         return button
     }()
@@ -353,23 +369,9 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         
     }
     
-//    let inputSeparator: UIView = {
-//        let view = UIView()
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//        view.backgroundColor = .lightGray
-//        return view
-//    }()
-
-//    let textSeparator: UIView = {
-//        let view = UIView()
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//        view.backgroundColor = .lightGray
-//        return view
-//    }()
-    
     let downIndicator: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "down")?.withRenderingMode(.alwaysTemplate)
+        iv.image = UIImage(named: "sort")?.withRenderingMode(.alwaysTemplate)
         iv.tintColor = .white
         iv.contentMode = .scaleAspectFit
         iv.translatesAutoresizingMaskIntoConstraints = false
@@ -387,9 +389,7 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
 
         view.addSubview(topicLabel)
         view.addSubview(inputsContainer)
-//        view.addSubview(inputSeparator)
         view.addSubview(inputLabel)
-//        view.addSubview(textSeparator)
         view.addSubview(inputTextView)
         
         inputsContainer.addSubview(topicTextfield)
@@ -429,24 +429,16 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         topicLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         topicLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         topicLabel.heightAnchor.constraint(equalToConstant: 44).isActive = true
-
-        
-//        inputSeparator.topAnchor.constraint(equalTo: topicLabel.bottomAnchor).isActive = true
-//        inputSeparator.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-//        inputSeparator.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-//        inputSeparator.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
-        
         
         inputsContainer.topAnchor.constraint(equalTo: topicLabel.bottomAnchor).isActive = true
         inputsContainer.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         inputsContainer.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        inputsContainer.heightAnchor.constraint(equalToConstant: 52).isActive = true
+        inputsContainer.heightAnchor.constraint(equalToConstant: 50).isActive = true
 
         topicTextfield.topAnchor.constraint(equalTo: inputsContainer.topAnchor, constant: 6).isActive = true
         topicTextfield.leftAnchor.constraint(equalTo: inputsContainer.leftAnchor, constant: 6).isActive = true
         topicTextfield.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
         topicTextfield.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
         
         downIndicator.rightAnchor.constraint(equalTo: topicTextfield.rightAnchor, constant: -10).isActive = true
         downIndicator.centerYAnchor.constraint(equalTo: topicTextfield.centerYAnchor).isActive = true
@@ -457,17 +449,11 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         inputLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         inputLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         inputLabel.heightAnchor.constraint(equalToConstant: 44).isActive = true
-
-//        textSeparator.topAnchor.constraint(equalTo: inputLabel.bottomAnchor).isActive = true
-//        textSeparator.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-//        textSeparator.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-//        textSeparator.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
         
-        
-        inputTextView.topAnchor.constraint(equalTo: inputLabel.bottomAnchor, constant: 6).isActive = true
+        inputTextView.topAnchor.constraint(equalTo: inputLabel.bottomAnchor, constant: 4).isActive = true
         inputTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 6).isActive = true
         inputTextView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
-        inputTextView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        inputTextView.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         
         groupContainer.topAnchor.constraint(equalTo: inputTextView.bottomAnchor, constant:6).isActive = true

@@ -23,6 +23,7 @@ class helpRequestCell: BaseCell {
     var homeController = HomeController()
     
     var uid: String?
+    var roomId: String?
     
     var helpRequest: helpRequest?{
         didSet{
@@ -32,6 +33,7 @@ class helpRequestCell: BaseCell {
             //changeTopicLabelColor((helpRequest?.stressLevel)!)
             timestamp.text =  setupTime((helpRequest?.timestamp?.intValue)!)
             uid = helpRequest?.uid
+            roomId = helpRequest?.roomId
         }
     }
     
@@ -125,7 +127,7 @@ class helpRequestCell: BaseCell {
     }()
     
     func handleJoin(){
-        homeController.launchChatRoom(uid!)
+        homeController.launchChatRoom(roomId!)
     }
     
     let joinSeparator: UIView = {
@@ -246,7 +248,7 @@ class helpRequestCell: BaseCell {
         joinSeparator.topAnchor.constraint(equalTo: topicLabel.bottomAnchor, constant: 10).isActive = true
         joinSeparator.centerXAnchor.constraint(equalTo: bottomButtonContainer.centerXAnchor).isActive = true
         joinSeparator.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.94).isActive = true
-        joinSeparator.heightAnchor.constraint(equalToConstant: 0.2).isActive = true
+        joinSeparator.heightAnchor.constraint(equalToConstant: 0.4).isActive = true
         
         bottomButtonContainer.topAnchor.constraint(equalTo: joinSeparator.bottomAnchor).isActive = true
         bottomButtonContainer.leftAnchor.constraint(equalTo: leftAnchor).isActive = true

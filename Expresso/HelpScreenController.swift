@@ -21,7 +21,7 @@ class HelpScreenController: UIViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 0.8) {
+        UIView.animate(withDuration: 1.6) {
             self.imageView.alpha = 1
         }
     }
@@ -36,24 +36,22 @@ class HelpScreenController: UIViewController{
     lazy var helpMeButton: UIButton = {
         let button = UIButton()
         button.setTitle("Help Me", for: .normal)
-        button.titleLabel!.font =  UIFont(name: "STHeitiTC-Light", size: 20)
+        button.titleLabel!.font =  UIFont(name: "Futura", size: 24)
         button.addTarget(self, action: #selector(handleHelpMe), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .systemColor("main")
         button.layer.cornerRadius = 25
-        button.layer.borderColor = UIColor.blue.cgColor
         return button
     }()
     
     lazy var helpOthersButton: UIButton = {
         let button = UIButton()
         button.setTitle("Help Others", for: .normal)
+        button.titleLabel!.font =  UIFont(name: "Futura", size: 24)
         button.addTarget(self, action: #selector(handleHelpOthers), for: .touchUpInside)
         button.backgroundColor = .systemColor("main")
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 25
-        button.layer.borderColor = UIColor.blue.cgColor
-        
         return button
     }()
     
@@ -75,7 +73,7 @@ class HelpScreenController: UIViewController{
         let logoimg = UIImageView()
         logoimg.image = UIImage(named: "logo")?.withRenderingMode(.alwaysOriginal)
         logoimg.translatesAutoresizingMaskIntoConstraints = false
-        logoimg.contentMode = .scaleAspectFill
+        logoimg.contentMode = .scaleAspectFit
         logoimg.alpha = 0
         logoimg.clipsToBounds = true
         return logoimg
@@ -84,6 +82,7 @@ class HelpScreenController: UIViewController{
     let emergencyLabel: UILabel = {
         let label = UILabel()
         label.text = "Call Suicide Hotline"
+        label.font =  UIFont(name: "Futura", size: 24)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 22)
@@ -98,7 +97,7 @@ class HelpScreenController: UIViewController{
         return view
     }()
     
-    let busPhone = 4049884543
+    let busPhone:Double = 4049884543
     
     func handleCall(){
         if let url = NSURL(string: "tel://\(busPhone)") {
@@ -108,20 +107,28 @@ class HelpScreenController: UIViewController{
     
     let callHelpLabel: UILabel = {
         let label = UILabel()
-        label.text = "Emergency?  Dial 911!"
+        label.text = "Express yourself"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .lightGray
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 24)
+        label.font = UIFont.init(name: "Futura-Medium", size: 24)
         return label
     }()
     
     
     func handleHelpMe(){
-        self.navigationController!.popViewController(animated: false)
-        homeController.createChatRoom()
-
         
+        
+        UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseOut, animations: { 
+            
+            
+            
+            }) { (Bool) in
+    
+                self.navigationController!.popViewController(animated: false)
+                self.homeController.createChatRoom()
+       
+        }
     }
     
     func handleHelpOthers(){
@@ -132,7 +139,7 @@ class HelpScreenController: UIViewController{
     func setupNavBar(){
         navigationController?.navigationBar.isTranslucent = false
         navigationItem.title = "Expresso"
-        navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Helvetica", size: 18)!, NSForegroundColorAttributeName : UIColor.white]
+        navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Futura", size: 20)!, NSForegroundColorAttributeName : UIColor.white]
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: navigationController, action: nil)
         navigationItem.leftBarButtonItem = backButton
     }
@@ -184,12 +191,6 @@ class HelpScreenController: UIViewController{
         callHelpLabel.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor).isActive = true
         callHelpLabel.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor).isActive = true
         callHelpLabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
-        
-//        callHelpLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-//        callHelpLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        callHelpLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-//        callHelpLabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
-        
         
         emergencyLabel.centerXAnchor.constraint(equalTo: emergencyContainer.centerXAnchor).isActive = true
         emergencyLabel.centerYAnchor.constraint(equalTo: emergencyContainer.centerYAnchor).isActive = true

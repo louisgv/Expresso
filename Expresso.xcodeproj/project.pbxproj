@@ -23,6 +23,7 @@
 		037FCBEF1DBCC3A4002EA8A4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037FCBEE1DBCC3A4002EA8A4 /* ChatViewController.swift */; };
 		037FCBF11DBCD06F002EA8A4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037FCBF01DBCD06F002EA8A4 /* Message.swift */; };
 		037FCBF31DBCD395002EA8A4 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037FCBF21DBCD395002EA8A4 /* ChatMessageCell.swift */; };
+		03920A621DBDFB65004DFE9B /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03920A611DBDFB65004DFE9B /* ChatRoom.swift */; };
 		03E55E261DBC9BA8006AD476 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E55E251DBC9BA8006AD476 /* ChatLogController.swift */; };
 		257793BC208098443E335343 /* Pods_ExpressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4CE723ADE82BC7829D108 /* Pods_ExpressoTests.framework */; };
 		6D921903D57A55FDC058EA57 /* Pods_ExpressoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615936A55EF85F99C8E7E210 /* Pods_ExpressoUITests.framework */; };
@@ -70,6 +71,7 @@
 		037FCBEE1DBCC3A4002EA8A4 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		037FCBF01DBCD06F002EA8A4 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		037FCBF21DBCD395002EA8A4 /* ChatMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		03920A611DBDFB65004DFE9B /* ChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		03E55E251DBC9BA8006AD476 /* ChatLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
 		2E99395227C1389408C7E98A /* Pods-Expresso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expresso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Expresso/Pods-Expresso.debug.xcconfig"; sourceTree = "<group>"; };
 		3CB4CE723ADE82BC7829D108 /* Pods_ExpressoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpressoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				032E5F971DBC4A0F00B2A6F2 /* helpRequest.swift */,
+				03920A611DBDFB65004DFE9B /* ChatRoom.swift */,
 				037FCBF01DBCD06F002EA8A4 /* Message.swift */,
 			);
 			name = Model;
@@ -501,6 +504,7 @@
 				032E5F851DBAF7EC00B2A6F2 /* HelpScreenController.swift in Sources */,
 				032E5F591DBAF53900B2A6F2 /* HomeController.swift in Sources */,
 				032E5F871DBB17E500B2A6F2 /* CreateChatController.swift in Sources */,
+				03920A621DBDFB65004DFE9B /* ChatRoom.swift in Sources */,
 				032E5F981DBC4A0F00B2A6F2 /* helpRequest.swift in Sources */,
 				037FCBF31DBCD395002EA8A4 /* ChatMessageCell.swift in Sources */,
 				037FCBF11DBCD06F002EA8A4 /* Message.swift in Sources */,

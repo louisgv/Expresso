@@ -69,8 +69,11 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
                 if let stressLevel = dictionary["stressLevel"] as! String!{
                     request.stressLevel = stressLevel
                 }
+                if let roomId = dictionary["roomId"] as! String!{
+                    request.roomId = roomId
+                }
                 request.uid = snapshot.key
-                
+
                 self.requests.append(request)
                 
                 self.requests.sort(by: { (message1, message2) -> Bool in
@@ -140,7 +143,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let knownHeight: CGFloat = 35 + 40 + 28
+        let knownHeight: CGFloat = 35 + 40 + 38
         
         if let requestTitle = requests[indexPath.item].title {
             
@@ -168,7 +171,13 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
 
     }
     
-    let createChatController = CreateChatRoomController()
+    lazy var createChatController: CreateChatRoomController = {
+        let controller = CreateChatRoomController()
+        
+        controller.homeController = self
+        return controller
+    }()
+        //= CreateChatRoomController()
     
     func createChatRoom(){
         navigationController?.pushViewController(createChatController, animated: true)
@@ -202,9 +211,9 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     
-    func launchChatRoom(_ uid: String){
+    func launchChatRoom(_ roomId: String){
         let chatController = ChatLogController(collectionViewLayout: UICollectionViewFlowLayout())
-        chatController.uid = uid
+        chatController.roomId = roomId
         navigationController?.pushViewController(chatController, animated: true)
         
     }

@@ -13,6 +13,7 @@ import Firebase
 class ChatLogController: UICollectionViewController, UITextFieldDelegate {
     
     var uid: String?
+    var roomId: String?
     
     lazy var inputTextField: UITextField = {
         let textField = UITextField()
@@ -31,12 +32,9 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
     }
     
     func observeMessages() {
-        guard let uid = FIRAuth.auth()?.currentUser?.uid else {
-            return
-        }
         
-        
-        let userMessagesRef = FIRDatabase.database().reference().child("user-messages").child(uid)
+        //observe user-messages from cell's uid (aka help request poster)
+        let userMessagesRef = FIRDatabase.database().reference().child("user-messages").child(roomId!)
         userMessagesRef.observe(.childAdded, with: { (snapshot) in
             
             let messageId = snapshot.key
@@ -56,6 +54,8 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
                 if let fromId = dictionary["fromId"] as? String!{
                     message.fromId = fromId
                 }
+                
+                //uid for chatroom
                 if let toId = dictionary["toId"] as? String!{
                     message.toId = toId
                 }
@@ -65,12 +65,8 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
 
                 
                 self.messages.append(message)
-                
-                
                 print(message)
-//              
-                
-                
+
 //                if message.chatPartnerId() == uid {
 //                    self.messages.append(message)
 //                }
@@ -98,6 +94,11 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
 
         navigationItem.title = "Chat Log Controller"
         navigationController?.navigationBar.tintColor = .white
+        let moreButton = UIBarButtonItem(image: UIImage(named: "menu")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(menuTap))
+        moreButton.tintColor = .white
+        
+        
+        navigationItem.rightBarButtonItems =  [moreButton]        
 
         collectionView?.backgroundColor = .white
         collectionView?.alwaysBounceVertical = true
@@ -106,6 +107,10 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
 
         setupInputComponents()
 
+    }
+    
+    func menuTap(){
+        
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -127,7 +132,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
     private func setupCell(cell: ChatMessageCell, message: Message) {
             if message.fromId == FIRAuth.auth()?.currentUser?.uid {
             //outgoing blue
-            cell.bubbleView.backgroundColor = ChatMessageCell.blueColor
+            cell.bubbleView.backgroundColor = .systemColor("main")
             cell.textView.textColor = .white
             cell.profileImageView.isHidden = true
 
@@ -187,6 +192,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
         
         let sendButton = UIButton(type: .system)
         sendButton.setTitle("Send", for: .normal)
+        sendButton.setTitleColor(.systemColor("main"), for: .normal)
         sendButton.translatesAutoresizingMaskIntoConstraints = false
         sendButton.addTarget(self, action: #selector(handleSend), for: .touchUpInside)
         containerView.addSubview(sendButton)
@@ -215,16 +221,14 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
 
     }
     
-    
     func handleSend() {
         let ref = FIRDatabase.database().reference().child("messages")
         let childRef = ref.childByAutoId()
-
-        let toId = uid!
+        
         let fromId = FIRAuth.auth()!.currentUser!.uid
         let currentTime:Int = Int(NSDate().timeIntervalSince1970)
         
-        let values = ["text": inputTextField.text!, "toId": toId, "fromId": fromId, "timestamp": currentTime] as [String : Any]
+        let values = ["text": inputTextField.text!, "toId": roomId!, "fromId": fromId, "timestamp": currentTime] as [String : Any]
         
         childRef.updateChildValues(values) { (error, ref) in
             if error != nil {
@@ -236,9 +240,6 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
             
             let messageId = childRef.key
             userMessagesRef.updateChildValues([messageId: 1])
-            
-            let recipientUserMessagesRef = FIRDatabase.database().reference().child("user-messages").child(toId)
-            recipientUserMessagesRef.updateChildValues([messageId: 1])
         }
     }
     

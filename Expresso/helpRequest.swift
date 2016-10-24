@@ -13,6 +13,7 @@ class helpRequest: NSObject {
     var timestamp: NSNumber?
     var topic: String?
     var uid: String?
+    var roomId: String?
     var stressLevel: String?
     
 }
