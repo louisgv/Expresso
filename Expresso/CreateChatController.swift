@@ -141,15 +141,19 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
             
             let uid = FIRAuth.auth()!.currentUser!.uid
             
+            // Create help_requests node
             let ref = FIRDatabase.database().reference().child("help_requests")
+            // Child node is uid of user
             let childRef = ref.child(uid)
             
+            // Create chatrooms node
             let chatRoomRef = FIRDatabase.database().reference().child("chatrooms")
+            // Child node is autoId
             let childChatRoomRef = chatRoomRef.childByAutoId()
-            let uidForChatRoom = childChatRoomRef.key
+            // get autoId
+            let roomId = childChatRoomRef.key
             
             let currentTime:Int = Int(NSDate().timeIntervalSince1970)
-            
             
             submitButton.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
             UIView.animate(withDuration: 2.0,
@@ -162,26 +166,25 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
                 }, completion:  {
                     (value: Bool) in
                     
-                    
-                    let values = ["title": self.inputTextView.text, "stressLevel": self.stressLevel, "timestamp" : currentTime, "topic": self.topicTextfield.text!, "roomId": uidForChatRoom] as [String : Any]
+                    let values = ["title": self.inputTextView.text, "stressLevel": self.stressLevel, "timestamp" : currentTime, "topic": self.topicTextfield.text!, "roomId": roomId] as [String : Any]
                         
                         childRef.updateChildValues(values)
+                    
                     let chatRoomValues = ["posterId": uid, "title": "Chatroom Title", "roomLimit": 5] as [String : Any]
+                    
                     childChatRoomRef.updateChildValues(chatRoomValues)
-
                     
             })
             
             
             self.navigationController!.popViewController(animated: false)
-            homeController.navigationController?.navigationBar.barTintColor = .systemColor("man")
-            homeController.launchChatRoom(uidForChatRoom)
+            homeController.navigationController?.navigationBar.barTintColor = .systemColor("main")
+            homeController.launchChatRoom(roomId)
 
         }
         
         
     }
-    
     
     func checkInputValues() -> Bool{
         if (topicTextfield.text?.isEmpty)! || (inputTextView.text?.isEmpty)! || (stressLevel.isEmpty) {
