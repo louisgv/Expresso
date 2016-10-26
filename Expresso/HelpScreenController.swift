@@ -101,7 +101,8 @@ class HelpScreenController: UIViewController{
     
     func handleCall(){
         if let url = NSURL(string: "tel://\(busPhone)") {
-            UIApplication.shared.openURL(url as URL)
+            //UIApplication.shared.openURL(url as URL)
+            UIApplication.shared.canOpenURL(url as URL)
         }
     }
     

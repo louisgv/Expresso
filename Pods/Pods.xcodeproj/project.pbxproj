@@ -10,7 +10,7 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>011AF910652F20BF7BB92384F6EC69E0</key>
+		<key>03E0106265A217ACC218EA2235104FBF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -19,353 +19,18 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>UIDevice+JSQMessages.h</string>
+			<string>FIRInstanceID.h</string>
 			<key>path</key>
-			<string>JSQMessagesViewController/Categories/UIDevice+JSQMessages.h</string>
+			<string>Headers/Public/FIRInstanceID.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>01B02315A86819C4EBA424D63C399B3F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CE1D96DD9DAD7935A707C31DCF743DDF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>01BCA0408211229065272E6F789E4E23</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5B38945B99647F8A0C7A7EE64A69E5E1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>031033A91A133EBFD47D7CFA7A9F31FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>58D026B86D753565C738FFF6954DBF76</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>0433F1C9E92597028CC3EF844C76466A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D9B44AA24C7EC49B977380BEFD09E5ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>04EFCD813482DAD2D33AF88A05921827</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AAD1983D94CE4DB40E4C9A73BB71B77F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>05BD9A1D13DA683AE0D1BDEB50FCD6BA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0712F748D9350F57DA1AC4264AC9B1D8</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B2A4CC4FF313607506BEB9B1D9B7933E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/JSQMessagesViewController/JSQMessagesViewController-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/JSQMessagesViewController/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/JSQMessagesViewController/JSQMessagesViewController.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>JSQMessagesViewController</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>07151947E77F17D7FA0FF07D217D353C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>JSQMessagesViewController.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0759002AB28878ABF7C3164E313EFEA6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>740A8314B7C2F6F0710AF687CDB4EF71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>089A1B6EDF4561F33C06E983FE008662</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesToolbarButtonFactory.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Factories/JSQMessagesToolbarButtonFactory.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0A7A39C9683D82CE702940D47FE02F41</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQSystemSoundPlayer.m</string>
-			<key>path</key>
-			<string>JSQSystemSoundPlayer/Classes/JSQSystemSoundPlayer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0B2A7B693EB1E2F299A768145E48621A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesToolbarContentView.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesToolbarContentView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0CBA8D4D6269BCBB7E5492032EB81A78</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessage.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessage.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0D0E3A2AAB23A87B85574DC6F0832F44</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-ExpressoUITests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0D4445598FB98BB7FF14E03782938247</key>
-		<dict>
-			<key>fileRef</key>
-			<string>54F08BDE38333C5D7724385EBEC4B04C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>0D8DC32C4015DB37BD14254AEBE23D55</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9476DDBCA58AA19D6FCB4132A262298C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/JSQSystemSoundPlayer/JSQSystemSoundPlayer-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/JSQSystemSoundPlayer/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/JSQSystemSoundPlayer/JSQSystemSoundPlayer.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>JSQSystemSoundPlayer</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0E1EE834FA00FAB6DE208683B96B78B8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewFlowLayoutInvalidationContext.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Layout/JSQMessagesCollectionViewFlowLayoutInvalidationContext.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0EC22B30D66C20A505D011152C54D1BB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1B588D80E66E545D53858A922CEA54D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0F10F7758C114EB892D2658EEB477743</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4911CED7936C79FB630EC879594AC34F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>0F910ADDB46BC8C094FB0EB4A7B8E80A</key>
+		<key>04915A5AE2551F4F5170E8824A73E97F</key>
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>7919202AEAD9AC8D26100BF4F408113B</string>
-				<string>88B2BB3FAEBBEC3B2A111038BB287A6F</string>
+				<string>0850AAE8789C01515E9F9A6B960FC41C</string>
+				<string>499257DB14EF6F1DEAD4665B092AA3B4</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -374,507 +39,7 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>1028D8F9B7569ECBFE1C7965008F1819</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>JSQMessagesTypingIndicatorFooterView.xib</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>102CCFB6EA10634DF9EC25CD1BA667BB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>JSQSystemSoundPlayer-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>125C5637E8D7C4F973265CBE20569F90</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>JSQSystemSoundPlayer-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>12B8D1B60DBD29A998B6DD15B7C1D842</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionView.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCollectionView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>131C9F6AA516BAF6D4E5C4253853D559</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C51BD72AE93016BF46A2B6030B1D9782</string>
-				<string>0A7A39C9683D82CE702940D47FE02F41</string>
-				<string>F94A45EE16FDFE3C56A89496F10E8D8D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>JSQSystemSoundPlayer</string>
-			<key>path</key>
-			<string>JSQSystemSoundPlayer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>131DA2CCF676FAE7625122C391C04096</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>15B769363E8A2B727F2DAE16157C2620</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-ExpressoTests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1673FB1ADB0B87400674C96D52256CDC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>270B2108798CD8E28F8C6ABB09B994F1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>16924EEBF200D0BA50255BC9A6B3E13C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>73C3ECD2470CDB90D83DF8E548474E1C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>16C7A614559F435BC8792E00185B9D00</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>GoogleNetworkingUtilities.framework</string>
-			<key>path</key>
-			<string>Frameworks/GoogleNetworkingUtilities.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18AFE094E969E7B5721367891C3A0067</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesMediaPlaceholderView.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesMediaPlaceholderView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>193B379BB11A4F8996E07E13BEB71926</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewDataSource.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessagesCollectionViewDataSource.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>19A3621482B81176DFE7AD4A603F0AF9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EFCA4D6D3BDD4D515B391E4525C24E12</string>
-				<string>0D8DC32C4015DB37BD14254AEBE23D55</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>19D8C07F990FC1A560D2FBB49437D51F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6BF22E8967C27D51C1E0E9A8C9DE27C4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1B09CA397A870FDB9EC3CABEA18B1331</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D7BE7C114A31C18C4DF46657CED0D9E7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1B588D80E66E545D53858A922CEA54D5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>MapKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MapKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>1D4F0CD6C26BB0A19B326F01B5185CDE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQPhotoMediaItem.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQPhotoMediaItem.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1E5DE23598A6925E8465F5A51E6ADA23</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesComposerTextView.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesComposerTextView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>21CC978B0D7EAA1C0E432EE121AF01BA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AA0F54BD9A5D6943BFA2853104F2ACA9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>21FEAD42CE4B4597FC628F5A5395B4D1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-ExpressoTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>22823025F6C8B3A51B7A37C5DDF39103</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesBubbleImageFactory.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Factories/JSQMessagesBubbleImageFactory.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2317B3CA8AE321219DD1AB12D8A124CC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-ExpressoTests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2322A7C125DCC6BF368F61136E801020</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-Expresso.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>232712B92D2F8C353A90F65A778C191B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AudioToolbox.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AudioToolbox.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>23BB676609AF1126AD4A9D9455ADE8D3</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>95DB89A8BFC5FF0BF98458651D0163CD</string>
-			<key>remoteInfo</key>
-			<string>JSQSystemSoundPlayer</string>
-		</dict>
-		<key>257FFEAB5BCD8B5B27FE1CF9CD001AE1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewCellOutgoing.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCollectionViewCellOutgoing.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>259BE4949282E088B26D4733752A683E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D6F8B377BAFC70D4FD84C4892A1B71FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>25D3FB5DFA501C9C38FD8F67814B2E9A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesAvatarImageFactory.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Factories/JSQMessagesAvatarImageFactory.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>25E01D8CFF77E5900567CF3C91A636EF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessages.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/JSQMessages.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>266AB872C63A637ECCD49EE57728B627</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1E5DE23598A6925E8465F5A51E6ADA23</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>26F53C1DEF307F5E3D5F11693CEB5214</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewCell.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCollectionViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>270B2108798CD8E28F8C6ABB09B994F1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesTypingIndicatorFooterView.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2815D92276A49AB754B5620E72DED6B6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>QuartzCore.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>2917BE4A081AF573F4C95F65FF7AD598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>GoogleInterchangeUtilities.framework</string>
-			<key>path</key>
-			<string>Frameworks/GoogleInterchangeUtilities.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>293D8240895EDE87FDD6EC2B4BF1F75D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesComposerTextView.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesComposerTextView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>297FF691F7FC3B0B9AC3CD61E0ED78DB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>JSQMessagesViewController.xib</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Controllers/JSQMessagesViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2A641E411AF34FBF9A3C53559C00697C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB764C2A06994AA370164851E7F6E0BD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>2B55DA6B905A197FD2C792316C0DAD43</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIColor+JSQMessages.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Categories/UIColor+JSQMessages.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2C75A99743D76A2BDA4166D0AFC779C5</key>
+		<key>0850AAE8789C01515E9F9A6B960FC41C</key>
 		<dict>
 			<key>baseConfigurationReference</key>
 			<string>B1F263A9230B8A3997E77D5FBF8F1159</string>
@@ -942,6 +107,130 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>0D0E3A2AAB23A87B85574DC6F0832F44</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-ExpressoUITests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F10F7758C114EB892D2658EEB477743</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4911CED7936C79FB630EC879594AC34F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>0F910ADDB46BC8C094FB0EB4A7B8E80A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7919202AEAD9AC8D26100BF4F408113B</string>
+				<string>88B2BB3FAEBBEC3B2A111038BB287A6F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>131DA2CCF676FAE7625122C391C04096</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>15B769363E8A2B727F2DAE16157C2620</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-ExpressoTests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1E29671D93E5BEE126A980D845AC5717</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F4444CBE87E77EDD993CC64D38306166</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>21FEAD42CE4B4597FC628F5A5395B4D1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ExpressoTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2317B3CA8AE321219DD1AB12D8A124CC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ExpressoTests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2322A7C125DCC6BF368F61136E801020</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-Expresso.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2C31E0233017FB1BFBCB33F7354A2D22</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D281E91283F793E8CA75412349F48963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>GoogleUtilities</string>
+			<key>path</key>
+			<string>GoogleUtilities</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -969,303 +258,38 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2E22A8278F40FE1E46BF78908FEC3E4C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewFlowLayout.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Layout/JSQMessagesCollectionViewFlowLayout.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2E6599BAE5A9B1961279847182F8EA4C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C98EB58EB3C4B8B2F39CBF9AB138ED7E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>30B7EE8C6618019F399192E94B854E13</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BC7A444E13E0AAB8E06FDB97D290F37B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>30F044A2C7B067F817A5AE9CC69B91C6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIImage+JSQMessages.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Categories/UIImage+JSQMessages.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30F37D35F4CE6D0090B951DD0F3F94CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F4D34C9A96F6A347E86CC5E66E1A32A0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>30FBFFEE55F8114689E3A0C7AC241B8F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesAvatarImageFactory.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Factories/JSQMessagesAvatarImageFactory.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>310563FD959B3216B7C225D64CAC2B60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>193B379BB11A4F8996E07E13BEB71926</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>313B4CD2762F8C05AF109C6E6052D658</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesLoadEarlierHeaderView.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesLoadEarlierHeaderView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>338A4EA36EEE5FAD5B65DBC61AB1BE6D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewFlowLayoutInvalidationContext.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Layout/JSQMessagesCollectionViewFlowLayoutInvalidationContext.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3480EDA0D24BF43580DA7090D640EA88</key>
-		<dict>
-			<key>fileRef</key>
-			<string>44BBD247C7AD31465786A3A0463299C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>36AEC0850118E9FBA6F9C90F63D8ED1F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesLoadEarlierHeaderView.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesLoadEarlierHeaderView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3722B8EFCCD92C09EF856D67B4085A4D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>12B8D1B60DBD29A998B6DD15B7C1D842</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>377CD0DE8B95E0E9B5094D823471B1AF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>74C9FD06A45E11D06FA7BC02E2C084C4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>37AA89C25817BE024664C52FC69EA033</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2815D92276A49AB754B5620E72DED6B6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>37F794B2B4AC1B1573D13EA8C8CF4BEA</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A4AF4DD9F96205D48F6727C37C1D83CC</string>
+			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>382E22B8D71EDDC98A90CCB6420F82F1</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_Expresso.framework</string>
-			<key>path</key>
-			<string>Pods-Expresso.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3AA1F98D89D85B2B870A1C33F554D1F9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>JSQMessagesLoadEarlierHeaderView.xib</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesLoadEarlierHeaderView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3BB4750CE09E600585A3F3866FDDE8DD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>84AB51C9DD8F1758ACD911E31D4B184E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3C294FEB0175340D1C0B07F5ED024AAC</key>
+		<key>3CD7E1E23ECF34FDF931C0381F479D8C</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>E6006C4B58A7B9867EBA38CDFAEC50E4</string>
+				<string>46A8763392E22D8E8B274B0E2D7D1550</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Analytics</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DB763D49C18E32EA7B1359F16168DB2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMediaItem.m</string>
+			<string>GoogleSymbolUtilities</string>
 			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMediaItem.m</string>
+			<string>GoogleSymbolUtilities</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3E1112802C792D0DB58D5DBDA5AE0334</key>
+		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>92D2BCA24FF5BDBB4195BD44BC99DE50</string>
+				<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E48A4925C06B910F3DD998EC0958E3E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1D4F0CD6C26BB0A19B326F01B5185CDE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>40FC2CD413157D47FD77016572174DD2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CA5620D262FB6C9D3438C149917B4882</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>41EF13ECB35D58377E62D549C23B131A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>232712B92D2F8C353A90F65A778C191B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>41F1FCECD04B6A1206278710C9C24965</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>FirebaseInstanceID.framework</string>
-			<key>path</key>
-			<string>Frameworks/FirebaseInstanceID.framework</string>
+			<string>iOS</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1355,74 +379,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4319A72765FFE454BFC3BFC106B38935</key>
+		<key>452405C82F8A0076FA037F9AC0719782</key>
 		<dict>
-			<key>fileRef</key>
-			<string>ABB8A730D6AFD2D7CE62B111523FA3D2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>437297F56954672F8EEC59D719A1FB17</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>41EF13ECB35D58377E62D549C23B131A</string>
-				<string>DA588C9F819184963E49044268212D55</string>
-				<string>0433F1C9E92597028CC3EF844C76466A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>44620CAF348A786FF605D031C12F9F0F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB6CB32A5FBC32A941727204E5F76395</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>44BBD247C7AD31465786A3A0463299C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>JSQMessagesToolbarContentView.h</string>
+			<string>FirebaseInstanceID.framework</string>
 			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesToolbarContentView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>44F7AB6745DD3484F3BFEA5A31FAF6B6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E4CB8341DB6F22A868641C254BBDB3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
+			<string>Frameworks/FirebaseInstanceID.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1494,6 +460,45 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>46A8763392E22D8E8B274B0E2D7D1550</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4761F87CFBF739E2A4D75031E7F2BDB7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4761F87CFBF739E2A4D75031E7F2BDB7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>GoogleSymbolUtilities.framework</string>
+			<key>path</key>
+			<string>Frameworks/GoogleSymbolUtilities.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>488DE80D15C6E1716EB07B210B2CA8A6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>FirebaseAuth.framework</string>
+			<key>path</key>
+			<string>Frameworks/FirebaseAuth.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>4911CED7936C79FB630EC879594AC34F</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1507,311 +512,14 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>49597BC9119A404D2A7EFDD4429D01B1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CAE95371FFA1A5C8EAB27D1415B6A8AE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
 		<key>497D07743C24467F68A782CB649B6E76</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A4AF4DD9F96205D48F6727C37C1D83CC</string>
+			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>499806CB8CEC19C61031A76FD2B297B1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>60276E29BDFB8B1AE8E923B8B0F8752C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4A581C6AA2C8892B50CD2A8305AFBB1C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EE707D1528D432FD7EEDA713BBE7C80B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4B742B0EF5F7162FEC382F37E8755579</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30FBFFEE55F8114689E3A0C7AC241B8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4C848C14B88DFA501D24A6FDB3905654</key>
-		<dict>
-			<key>fileRef</key>
-			<string>64B4C56B825226832E7C286E62627659</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4D23921227D519A3AB89F604CA8CEFC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AA2996E7531696E927FB5722884AD450</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4D60C0793B78C397E2C84E67F96E43F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C85B0547B570CB298BAD424CAEDECB3B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4E6039EE1B5577E50EC725D55971D1E4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesLabel.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesLabel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4E946772C52A82B434DB7E55D1269706</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8F4A8936DDF76BA97A1BB62B0CE5A935</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4F4D0653B02636C9BA10F96EA081AEC2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E726CFB1B62A12917596FFD745C5E009</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4F95FFAADCC250844AD8EDDD9994F3F9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-ExpressoTests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4FCACED3692208D3E9670E13807E91EF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9B2449BA0D0D08499559C13B9E7AFFE5</string>
-				<string>4667600F15863B95F8BC45A89CD8DCB0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>5466DF9B932259EE98AF3550A7093416</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E1112802C792D0DB58D5DBDA5AE0334</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>FirebaseAuth</string>
-			<key>path</key>
-			<string>FirebaseAuth</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54AA2B955CBB9D6D410D6E4B0A8C48D2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54F08BDE38333C5D7724385EBEC4B04C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewLayoutAttributes.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Layout/JSQMessagesCollectionViewLayoutAttributes.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>555EB289E1CE7EBD9B5DF061362F1466</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>JSQSystemSoundPlayer.framework</string>
-			<key>path</key>
-			<string>JSQSystemSoundPlayer.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>55949A8EB25BA868D2F63D198EDD6D52</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3AA1F98D89D85B2B870A1C33F554D1F9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>571702D32E7DCE545400B905107DBCCF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A1279C9A904EF4F37E9E1D245EDE8FD4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>57EF3B12340A40FCD8D8498E0133F7EC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9200891D3196F7BAF1C89727C08E67EF</string>
-				<string>F843D8E44DA61A22635498E495ED1737</string>
-				<string>5466DF9B932259EE98AF3550A7093416</string>
-				<string>B27210E320BB0BB11839F7B4087F8FBA</string>
-				<string>D32B05B344483442CAC284C960A19900</string>
-				<string>EC974BCF5F856418959704D7FA319719</string>
-				<string>E73A839123F8349379C0393124C8FCC4</string>
-				<string>6A11CBB2B3C0C16B3DA741CC72797A4E</string>
-				<string>E874C77E9AA8D7B93075F19C92E15E72</string>
-				<string>DA0657269B32B0C6A22ED7A9EE4BCC4F</string>
-				<string>131C9F6AA516BAF6D4E5C4253853D559</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>58D026B86D753565C738FFF6954DBF76</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesBubbleImage.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessagesBubbleImage.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5995762697F50A17F8CCF8E74CF40DD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8BC5C563B862642834789DDC319E6F26</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5A714DFB91AD380068664A1631102B39</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-ExpressoUITests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5AC07CD15CF4E91BE4E4D8169E3C7C13</key>
-		<dict>
-			<key>fileRef</key>
-			<string>96F30A5D85DE08B54EE63844BEFFA4C8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5AEB2A344C602E55B3A67519F806B3F6</key>
+		<key>499257DB14EF6F1DEAD4665B092AA3B4</key>
 		<dict>
 			<key>baseConfigurationReference</key>
 			<string>EBED3F745B7A1D1CC53498E7575CABC7</string>
@@ -1879,64 +587,129 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>5B38945B99647F8A0C7A7EE64A69E5E1</key>
+		<key>4AE1F476EE5C5C8DF04EEE6422F78AB8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8728B9908C78B6C843FB4F06235273C6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4F95FFAADCC250844AD8EDDD9994F3F9</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQPhotoMediaItem.h</string>
+			<string>text</string>
 			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQPhotoMediaItem.h</string>
+			<string>Pods-ExpressoTests-acknowledgements.markdown</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5BC6257B743925B7DB4CB619F5EA206D</key>
+		<key>4FCACED3692208D3E9670E13807E91EF</key>
 		<dict>
-			<key>fileRef</key>
-			<string>C5CCA62CAAFEC2F9D14645A534A8968F</string>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9B2449BA0D0D08499559C13B9E7AFFE5</string>
+				<string>4667600F15863B95F8BC45A89CD8DCB0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>5C4EF756F8F12C98CC42B34D4FA74490</key>
+		<key>54AA2B955CBB9D6D410D6E4B0A8C48D2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>55D049B9DC71689B3C82684D86DCD06F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>04915A5AE2551F4F5170E8824A73E97F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CF1EC1D9529C04D089B000BD1003D6E1</string>
+				<string>7FA4773BFCCC5AD96A77229A0FB1D96A</string>
+				<string>4AE1F476EE5C5C8DF04EEE6422F78AB8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Expresso</string>
+			<key>productName</key>
+			<string>Pods-Expresso</string>
+			<key>productReference</key>
+			<string>F335366D4A0BD77B1FF987AEFCAC309C</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>55D3EB9CC2466094DD973029676A2472</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>FirebaseAnalytics.framework</string>
+			<string>GoogleNetworkingUtilities.framework</string>
 			<key>path</key>
-			<string>Frameworks/FirebaseAnalytics.framework</string>
+			<string>Frameworks/GoogleNetworkingUtilities.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5C84B2DE86B8F95C47956701871A1F7A</key>
+		<key>5995762697F50A17F8CCF8E74CF40DD0</key>
 		<dict>
+			<key>fileRef</key>
+			<string>8BC5C563B862642834789DDC319E6F26</string>
 			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>JSQSystemSoundPlayer</string>
-			<key>target</key>
-			<string>95DB89A8BFC5FF0BF98458651D0163CD</string>
-			<key>targetProxy</key>
-			<string>23BB676609AF1126AD4A9D9455ADE8D3</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>5E51A3C9D010C94D8EECB7E9AD3FB7A4</key>
+		<key>5A714DFB91AD380068664A1631102B39</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessage.h</string>
+			<string>text</string>
 			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessage.h</string>
+			<string>Pods-ExpressoUITests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5C70F7225A55D654CC45856840D1C7EA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CF52A66801ACB66144CBA1E6EBEE70D9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Firebase</string>
+			<key>path</key>
+			<string>Firebase</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1951,46 +724,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>60276E29BDFB8B1AE8E923B8B0F8752C</key>
+		<key>620D6FACC7AA55A8699470E762FE37B5</key>
 		<dict>
+			<key>children</key>
+			<array>
+				<string>F335366D4A0BD77B1FF987AEFCAC309C</string>
+				<string>FAB62443D5DE359196153ADAC1D12FCE</string>
+				<string>F92D5F00BF8D6B6E0620269A8693FACA</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>CoreLocation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreLocation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>64B4C56B825226832E7C286E62627659</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesCellTextView.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCellTextView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>661EF983F27B86EA6D0D109EC6BF3BBC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQVideoMediaItem.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQVideoMediaItem.h</string>
+			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2007,125 +752,60 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>677E950E48C65166C3A94290E6A991AA</key>
+		<key>67BAE9A776C3F88B932EF65D29360537</key>
 		<dict>
-			<key>fileRef</key>
-			<string>6B5D600470FD33AF8E1EC67C04B199AE</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>FirebaseDatabase.framework</string>
+			<key>path</key>
+			<string>Frameworks/FirebaseDatabase.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>67A35B6717E9987DAF5472249B3E2A1D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>701FA0A2C55A3A2D28075640FBA55087</string>
-				<string>B1BA67DE8A08C5EE9104E946B4141595</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6887B6AD5323603D755224A7B63ED5E9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>297FF691F7FC3B0B9AC3CD61E0ED78DB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>68C18B87FBF4828EE53EB994723B9340</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF7D9C1220D082966DA473AD1612EAA5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>695274D66CE52EBA7FCED9F70A11E828</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B7383B6850F0B195B7F6AA53AC69FC34</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A11CBB2B3C0C16B3DA741CC72797A4E</key>
+		<key>6926ECF7C779A470DCBC96D030CC6A83</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>4A581C6AA2C8892B50CD2A8305AFBB1C</string>
+				<string>B003E44AF39A073FF0DCBF62A6DB2BF0</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>GoogleSymbolUtilities</string>
+			<string>FirebaseAnalytics</string>
 			<key>path</key>
-			<string>GoogleSymbolUtilities</string>
+			<string>FirebaseAnalytics</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6A4C500C3619B04F923FCBFE63907F9A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>JSQMessagesViewController</string>
-			<key>target</key>
-			<string>EDA125ADA52355B7CA6DF7BA96918357</string>
-			<key>targetProxy</key>
-			<string>DE7EEFB5F5199E18F85666E8187F9388</string>
-		</dict>
-		<key>6A53F0D1158FED4EA6E410FF0D013F32</key>
+		<key>6A7093A972E338FDCB1503327A5A108F</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>BFAE61A4EC7BC55A4775273B3DB85599</string>
-				<string>555EB289E1CE7EBD9B5DF061362F1466</string>
-				<string>382E22B8D71EDDC98A90CCB6420F82F1</string>
-				<string>F9F7655BF982B604CBCAD9EC06C0CAC8</string>
-				<string>B39FA3D6942BEAA05BA3C7BCAD7B8CC2</string>
+				<string>67BAE9A776C3F88B932EF65D29360537</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Products</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6B5D600470FD33AF8E1EC67C04B199AE</key>
+		<key>6DDD0181EC31EBBDC09435AF0A624F8D</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>03E0106265A217ACC218EA2235104FBF</string>
+				<string>7928D8E4AF7DDB04EA7796A15D1A1F95</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>JSQMessagesCollectionViewCell.m</string>
+			<string>FirebaseInstanceID</string>
 			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCollectionViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6B79639EB9853021B616514910AE390D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DA03C7237DAE77C0E7FC04AEFF7935D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6BF22E8967C27D51C1E0E9A8C9DE27C4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewLayoutAttributes.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Layout/JSQMessagesCollectionViewLayoutAttributes.m</string>
+			<string>FirebaseInstanceID</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2142,30 +822,26 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6E553F5F906C7287A82C5282BA3F69BB</key>
+		<key>6E9F397AE79C26FBE9C8767EB7C6BF89</key>
 		<dict>
+			<key>children</key>
+			<array>
+				<string>5C70F7225A55D654CC45856840D1C7EA</string>
+				<string>6926ECF7C779A470DCBC96D030CC6A83</string>
+				<string>B975A4AA5B5C2F4A8E3D75B69E5E97DB</string>
+				<string>72FF4AA34B51053F6345C9700A854DCB</string>
+				<string>6DDD0181EC31EBBDC09435AF0A624F8D</string>
+				<string>DBFFACE7C9ED8EC5C7CC42F190190BC4</string>
+				<string>A14C6E4BB4CB955E28A2A2AA42AF62F7</string>
+				<string>3CD7E1E23ECF34FDF931C0381F479D8C</string>
+				<string>2C31E0233017FB1BFBCB33F7354A2D22</string>
+			</array>
 			<key>isa</key>
-			<string>PBXTargetDependency</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>JSQSystemSoundPlayer</string>
-			<key>target</key>
-			<string>95DB89A8BFC5FF0BF98458651D0163CD</string>
-			<key>targetProxy</key>
-			<string>B63DBD0AF00FB3E8387CE39128A096DB</string>
-		</dict>
-		<key>6EF411D685F4F6672FBFC212D99B8517</key>
-		<dict>
-			<key>fileRef</key>
-			<string>089A1B6EDF4561F33C06E983FE008662</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>6F1CCD6311D09110503C4E2AA1B44B62</key>
 		<dict>
@@ -2180,104 +856,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6FB2C679EE1B073C92222312CE4DED2E</key>
+		<key>72FF4AA34B51053F6345C9700A854DCB</key>
 		<dict>
-			<key>fileRef</key>
-			<string>0CBA8D4D6269BCBB7E5492032EB81A78</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>701FA0A2C55A3A2D28075640FBA55087</key>
-		<dict>
-			<key>fileRef</key>
-			<string>102CCFB6EA10634DF9EC25CD1BA667BB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>730331CDD83AC7627552415F6C426792</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQSystemSoundPlayer+JSQMessages.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Categories/JSQSystemSoundPlayer+JSQMessages.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>73C3ECD2470CDB90D83DF8E548474E1C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewFlowLayout.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Layout/JSQMessagesCollectionViewFlowLayout.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>740A8314B7C2F6F0710AF687CDB4EF71</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQLocationMediaItem.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQLocationMediaItem.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>740C520C19099D3F03180CAA925D2CFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1028D8F9B7569ECBFE1C7965008F1819</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7454B28CC33ADF2EA2083E1C31A34EF4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>children</key>
 			<array>
-				<string>7E85C4C1728611C6EB2EB260890F82BC</string>
+				<string>6A7093A972E338FDCB1503327A5A108F</string>
 			</array>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>74C9FD06A45E11D06FA7BC02E2C084C4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>NSString+JSQMessages.h</string>
+			<string>FirebaseDatabase</string>
 			<key>path</key>
-			<string>JSQMessagesViewController/Categories/NSString+JSQMessages.h</string>
+			<string>FirebaseDatabase</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2294,29 +884,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7600FF3C683E3CE30455BE18B782C3C2</key>
+		<key>789CC823EA9D4F0478B6B312D7874F20</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>UIDevice+JSQMessages.m</string>
+			<string>FirebaseAnalytics.framework</string>
 			<key>path</key>
-			<string>JSQMessagesViewController/Categories/UIDevice+JSQMessages.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7751715BD60390AAE0151A7F8E9361F4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>JSQSystemSoundPlayer.modulemap</string>
+			<string>Frameworks/FirebaseAnalytics.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2388,6 +965,19 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>7928D8E4AF7DDB04EA7796A15D1A1F95</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>452405C82F8A0076FA037F9AC0719782</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>798013328E9712A91AE8A836D751AF3C</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -2400,47 +990,6 @@
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-		</dict>
-		<key>79E4CB8341DB6F22A868641C254BBDB3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>GoogleUtilities.framework</string>
-			<key>path</key>
-			<string>Frameworks/GoogleUtilities.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7ACF76BC05AB2595DAAC828A323B853C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>25D3FB5DFA501C9C38FD8F67814B2E9A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7B026957DB50FA1CC33149156B43568D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C6B43D1705B50495AF158609BBC7ECB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7B182EBCB49E2BDDD55318B5A9672E19</key>
-		<dict>
-			<key>fileRef</key>
-			<string>05BD9A1D13DA683AE0D1BDEB50FCD6BA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>7B26DB324C2A7D93B915301CB2AC6B0A</key>
 		<dict>
@@ -2463,54 +1012,18 @@
 			<key>productName</key>
 			<string>Pods-ExpressoTests</string>
 			<key>productReference</key>
-			<string>F9F7655BF982B604CBCAD9EC06C0CAC8</string>
+			<string>FAB62443D5DE359196153ADAC1D12FCE</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>7B82D07365E23430D5FD1EFF5B753312</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesInputToolbar.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesInputToolbar.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7CF7B8B79553AED579B5B5498E353FED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B7D229A8A65CC14E8E01D44CBF42605D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>7D80D67411C6E96CB16F3504D08B5257</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C5B5EAA7F4CB463C023BD6A2D02A7DF9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>DBAA73A0AC88AA9EE38FEA408A547DA7</string>
-				<string>57EF3B12340A40FCD8D8498E0133F7EC</string>
-				<string>6A53F0D1158FED4EA6E410FF0D013F32</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>6E9F397AE79C26FBE9C8767EB7C6BF89</string>
+				<string>620D6FACC7AA55A8699470E762FE37B5</string>
 				<string>42489641EC2AF55939F06FF03EC47BA5</string>
 			</array>
 			<key>isa</key>
@@ -2518,134 +1031,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7DCD08F939EB1E99120A8A0DC7794C88</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DD0ED649FD104E405F10EBA2F3DEB62</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BECFFFE683B73792EF863404B3B8BBF7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>7DE536283CA0A4D69ED6599C75441DA5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F4444CBE87E77EDD993CC64D38306166</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7E4DF362ABBE66C47E42B839FD0FD452</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3F1B66D43E13B19B214EC66CD5CC199</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7E7709236A1020698BF2D3E54E51F912</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FD177F4A538509A8DE6FD6BB575A18A4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>7E85C4C1728611C6EB2EB260890F82BC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A4AF4DD9F96205D48F6727C37C1D83CC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>803DB64DFCDE4A051908D928F31E9BF1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>232712B92D2F8C353A90F65A778C191B</string>
-				<string>8245FF95A0DF50A1A96C397799D6A997</string>
-				<string>60276E29BDFB8B1AE8E923B8B0F8752C</string>
-				<string>A4AF4DD9F96205D48F6727C37C1D83CC</string>
-				<string>1B588D80E66E545D53858A922CEA54D5</string>
-				<string>2815D92276A49AB754B5620E72DED6B6</string>
-				<string>D9B44AA24C7EC49B977380BEFD09E5ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8245FF95A0DF50A1A96C397799D6A997</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>827CBB966E558F0650C725F36C632471</key>
+		<key>7FA4773BFCCC5AD96A77229A0FB1D96A</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>FF31352F3ED1F8F6125A45EBC1AB87EC</string>
-				<string>E5F394B09B2D9A5A72E0A4644C5D1579</string>
+				<string>C8305EAD199B44B013882E0BCD5FF2A9</string>
 			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
+			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-		</dict>
-		<key>829B8ACA60CB7423C291830F2B956E5C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F9262114B0ED5EA9A27E2107E17B2B60</string>
-				<string>0712F748D9350F57DA1AC4264AC9B1D8</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>83098C4D51D877577AB012A1D597612E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CE6506EBC6BD0DBFB2E8F7FB993094C8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>834C5F63B25F24652D24EA2A8EB640A8</key>
 		<dict>
@@ -2660,34 +1057,19 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>83F155B5B4C4F7908BF8305E1244DB46</key>
+		<key>8728B9908C78B6C843FB4F06235273C6</key>
 		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2C75A99743D76A2BDA4166D0AFC779C5</string>
-				<string>5AEB2A344C602E55B3A67519F806B3F6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
+			<key>fileRef</key>
+			<string>EBF55DF27BEC2569E4D3B7EB5B111D3C</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>84AB51C9DD8F1758ACD911E31D4B184E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesInputToolbar.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesInputToolbar.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>88B2BB3FAEBBEC3B2A111038BB287A6F</key>
 		<dict>
@@ -2757,20 +1139,6 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>8B6365494AE2A70B1214C2BC1E2AA4B4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EBF55DF27BEC2569E4D3B7EB5B111D3C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
 		<key>8BC5C563B862642834789DDC319E6F26</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2784,41 +1152,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8DA9D21A18930905E19F90AA7A15D7D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>36AEC0850118E9FBA6F9C90F63D8ED1F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8F4A8936DDF76BA97A1BB62B0CE5A935</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessageMediaData.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessageMediaData.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9031EBB9D4019D066ED9AB32A1C22210</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>JSQSystemSoundPlayer-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>911E201544BDF4CD2EF8CD8D9A7D6B37</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2829,76 +1162,6 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>Pods-ExpressoUITests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>913A644DA5695417AFC477E39F34007F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5E51A3C9D010C94D8EECB7E9AD3FB7A4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>91ED3DB04EB497B76A9E5568F613DDBC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5C4EF756F8F12C98CC42B34D4FA74490</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9200891D3196F7BAF1C89727C08E67EF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3C294FEB0175340D1C0B07F5ED024AAC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Firebase</string>
-			<key>path</key>
-			<string>Firebase</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>92D2BCA24FF5BDBB4195BD44BC99DE50</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>FirebaseAuth.framework</string>
-			<key>path</key>
-			<string>Frameworks/FirebaseAuth.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>932AF3701EF5B3DD91DE3C9286DCD617</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIView+JSQMessages.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Categories/UIView+JSQMessages.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2920,161 +1183,6 @@
 			<string>SOURCE_ROOT</string>
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>93E94CAB3439F0C79F6F3E2859DDB5CB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FIRInstanceID.h</string>
-			<key>path</key>
-			<string>Headers/Public/FIRInstanceID.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>941FDAB841725CA47ACB2FCFAA3CC2A7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B8BB61D9D1EE1A0F1B0DF2B37CA4164E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>94286FFB3D87C2D8950D961DD3780359</key>
-		<dict>
-			<key>fileRef</key>
-			<string>26F53C1DEF307F5E3D5F11693CEB5214</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9476DDBCA58AA19D6FCB4132A262298C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>JSQSystemSoundPlayer.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>95B94D6152275EF431A1422FA0CDD87F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>16C7A614559F435BC8792E00185B9D00</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>95DB89A8BFC5FF0BF98458651D0163CD</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>19A3621482B81176DFE7AD4A603F0AF9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>827CBB966E558F0650C725F36C632471</string>
-				<string>437297F56954672F8EEC59D719A1FB17</string>
-				<string>67A35B6717E9987DAF5472249B3E2A1D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>JSQSystemSoundPlayer</string>
-			<key>productName</key>
-			<string>JSQSystemSoundPlayer</string>
-			<key>productReference</key>
-			<string>555EB289E1CE7EBD9B5DF061362F1466</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>96F30A5D85DE08B54EE63844BEFFA4C8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesMediaPlaceholderView.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesMediaPlaceholderView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>98B5946B9679FB1F4BDE4A3ABDA70EEB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA33B675A5510C2ED16AA3CB192FE351</string>
-				<string>07151947E77F17D7FA0FF07D217D353C</string>
-				<string>B2A4CC4FF313607506BEB9B1D9B7933E</string>
-				<string>D6F8B377BAFC70D4FD84C4892A1B71FA</string>
-				<string>C42828A448E7C6D2443812EDE9B411C9</string>
-				<string>05BD9A1D13DA683AE0D1BDEB50FCD6BA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/JSQMessagesViewController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>992DE229E38BAFF3876E08438962CD8D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EA8C385D910E0F3C7A94F5677A6517B5</string>
-				<string>5BC6257B743925B7DB4CB619F5EA206D</string>
-				<string>A86DAEB2C246C302A2D6EE1C4A050B2C</string>
-				<string>55949A8EB25BA868D2F63D198EDD6D52</string>
-				<string>695274D66CE52EBA7FCED9F70A11E828</string>
-				<string>740C520C19099D3F03180CAA925D2CFA</string>
-				<string>6887B6AD5323603D755224A7B63ED5E9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>996BC8135736A4788E1EB4FD862C54AB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18AFE094E969E7B5721367891C3A0067</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>99CC09CC3E24840BA777197339BF872A</key>
 		<dict>
@@ -3157,49 +1265,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>9B969D5B2713522C106733E044F572BE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB1FA8BBE8C8E9CEE6FE04E36AD802F3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9C6B43D1705B50495AF158609BBC7ECB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesMediaViewBubbleImageMasker.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Factories/JSQMessagesMediaViewBubbleImageMasker.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D278E1E85611361C20A27A21E2106C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B35A94B51F0F8995FBED2BBA0D29EA67</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
 		<key>9E39D906F585BB01472928B2D028CEBD</key>
 		<dict>
 			<key>fileRef</key>
@@ -3207,97 +1272,20 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>9E9E4AD4BCCC2451D25D86703625E577</key>
+		<key>A14C6E4BB4CB955E28A2A2AA42AF62F7</key>
 		<dict>
-			<key>fileRef</key>
-			<string>C27D9B53B957625698E14789C5B076B3</string>
+			<key>children</key>
+			<array>
+				<string>A81D21B5302AB8375EEFBF24421919DF</string>
+			</array>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9EDAFA950C487BDE6F6EA9C9268A93FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>FirebaseDatabase.framework</string>
+			<string>GoogleNetworkingUtilities</string>
 			<key>path</key>
-			<string>Frameworks/FirebaseDatabase.framework</string>
+			<string>GoogleNetworkingUtilities</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A1279C9A904EF4F37E9E1D245EDE8FD4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesViewController.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Controllers/JSQMessagesViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A21975FCBBFC8AE8EF75FA3B9955676F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesKeyboardController.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Controllers/JSQMessagesKeyboardController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3F1B66D43E13B19B214EC66CD5CC199</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesBubbleImageFactory.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Factories/JSQMessagesBubbleImageFactory.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A447CE973A7EF7DF61CB86BFA70ECA43</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2E22A8278F40FE1E46BF78908FEC3E4C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>A4AF4DD9F96205D48F6727C37C1D83CC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>A582C7986A9F1DCD3547E6596855B1F9</key>
 		<dict>
@@ -3312,6 +1300,32 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>A6E49B499546589686E163EECC8085DF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EB7A564D36A7D9E62CD7CDA67B579F51</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A81D21B5302AB8375EEFBF24421919DF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>55D3EB9CC2466094DD973029676A2472</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>A8286936089C24DF24FB821CFF3B38C3</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3322,149 +1336,6 @@
 			<string>text.plist.xml</string>
 			<key>path</key>
 			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A8415FAB377F1D422D8886191AF0BCE5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>932AF3701EF5B3DD91DE3C9286DCD617</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A86DAEB2C246C302A2D6EE1C4A050B2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F58372DF28585A786DE0DE53E907FDCE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A870E55065C3CF6D01768FB72524DF0A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>25E01D8CFF77E5900567CF3C91A636EF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>A9FF5A070C0DD7251ED232230633FB1C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E74D5EDD4E8FB92A725D4E5AF199CCC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>AA0F54BD9A5D6943BFA2853104F2ACA9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessageAvatarImageDataSource.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessageAvatarImageDataSource.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA2996E7531696E927FB5722884AD450</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIImage+JSQMessages.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Categories/UIImage+JSQMessages.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA606C0962DBECF36C28A5B1C05B9F56</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCB8E0E41BBCC7AA1809B2D39E7584B3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AAD1983D94CE4DB40E4C9A73BB71B77F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewCellIncoming.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCollectionViewCellIncoming.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABB8A730D6AFD2D7CE62B111523FA3D2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesTimestampFormatter.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Factories/JSQMessagesTimestampFormatter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AD750E082514D73CE37CE6C5861C259C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CD5D4F9794DFB9E865F84FAEDD2ACE3D</string>
-				<string>499806CB8CEC19C61031A76FD2B297B1</string>
-				<string>E41831AD2614E90CDDB413C9213045EE</string>
-				<string>30B7EE8C6618019F399192E94B854E13</string>
-				<string>0EC22B30D66C20A505D011152C54D1BB</string>
-				<string>37AA89C25817BE024664C52FC69EA033</string>
-				<string>DF126628D8B166F2DBB99DEA6DD4A5B4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AD85F658633944EF7815B9B6D4A89A85</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesBubblesSizeCalculator.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Layout/JSQMessagesBubblesSizeCalculator.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3546,21 +1417,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>AF88215DD1D24D29B107B704E0CD625F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessageData.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessageData.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>AFCBBB6BE6C393E4B1E20F6EB2F1B255</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3574,11 +1430,11 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B181EAD3DC641D1975D0D8A166C0D46E</key>
+		<key>B003E44AF39A073FF0DCBF62A6DB2BF0</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>41F1FCECD04B6A1206278710C9C24965</string>
+				<string>789CC823EA9D4F0478B6B312D7874F20</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -3586,20 +1442,6 @@
 			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B1BA67DE8A08C5EE9104E946B4141595</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C51BD72AE93016BF46A2B6030B1D9782</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>B1F263A9230B8A3997E77D5FBF8F1159</key>
 		<dict>
@@ -3614,63 +1456,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B27210E320BB0BB11839F7B4087F8FBA</key>
+		<key>B54925C679C8221ED7BC98F242741EE4</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>CC39E14439330DD9113DF9B15F2064A0</string>
+				<string>488DE80D15C6E1716EB07B210B2CA8A6</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>FirebaseDatabase</string>
-			<key>path</key>
-			<string>FirebaseDatabase</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B2A4CC4FF313607506BEB9B1D9B7933E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>JSQMessagesViewController.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B35A94B51F0F8995FBED2BBA0D29EA67</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesKeyboardController.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Controllers/JSQMessagesKeyboardController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B39FA3D6942BEAA05BA3C7BCAD7B8CC2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_ExpressoUITests.framework</string>
-			<key>path</key>
-			<string>Pods-ExpressoUITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>B5F8638EBE4C82F81D765D1F99BE0AD5</key>
 		<dict>
@@ -3682,49 +1479,6 @@
 			<string>text.plist.xml</string>
 			<key>path</key>
 			<string>Pods-Expresso-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B63DBD0AF00FB3E8387CE39128A096DB</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>95DB89A8BFC5FF0BF98458651D0163CD</string>
-			<key>remoteInfo</key>
-			<string>JSQSystemSoundPlayer</string>
-		</dict>
-		<key>B7383B6850F0B195B7F6AA53AC69FC34</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>JSQMessagesToolbarContentView.xib</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesToolbarContentView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B7D229A8A65CC14E8E01D44CBF42605D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesMediaViewBubbleImageMasker.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Factories/JSQMessagesMediaViewBubbleImageMasker.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3741,147 +1495,33 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B8BB61D9D1EE1A0F1B0DF2B37CA4164E</key>
+		<key>B975A4AA5B5C2F4A8E3D75B69E5E97DB</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSBundle+JSQMessages.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Categories/NSBundle+JSQMessages.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B96DB1A8358D6EABB78BB6D76C17D8A0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>661EF983F27B86EA6D0D109EC6BF3BBC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>BA33B675A5510C2ED16AA3CB192FE351</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB6CB32A5FBC32A941727204E5F76395</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesBubblesSizeCalculator.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Layout/JSQMessagesBubblesSizeCalculator.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BB764C2A06994AA370164851E7F6E0BD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewCellOutgoing.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCollectionViewCellOutgoing.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC37716ED46FEFA1C352542966BA8CE1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>children</key>
 			<array>
-				<string>7DE536283CA0A4D69ED6599C75441DA5</string>
+				<string>B54925C679C8221ED7BC98F242741EE4</string>
 			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BC7A444E13E0AAB8E06FDB97D290F37B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>JSQSystemSoundPlayer.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BDD4A5CD12686E13109709406112AA87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7600FF3C683E3CE30455BE18B782C3C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BECFFFE683B73792EF863404B3B8BBF7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>JSQSystemSoundPlayer+JSQMessages.h</string>
+			<string>FirebaseAuth</string>
 			<key>path</key>
-			<string>JSQMessagesViewController/Categories/JSQSystemSoundPlayer+JSQMessages.h</string>
+			<string>FirebaseAuth</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BFAE61A4EC7BC55A4775273B3DB85599</key>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
+			<key>children</key>
+			<array>
+				<string>3DCAB2B7CDE207B3958B6CB957FCC758</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>JSQMessagesViewController.framework</string>
-			<key>path</key>
-			<string>JSQMessagesViewController.framework</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BFF5A6CE11DD2E86D726E0D19B47F866</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0E1EE834FA00FAB6DE208683B96B78B8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C224235FD219BC066B6357744EDB8C64</key>
 		<dict>
@@ -3896,207 +1536,12 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>C27D9B53B957625698E14789C5B076B3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesBubbleImage.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessagesBubbleImage.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C30E09DEC4DD546B2B9AF06FA73EDB3C</key>
+		<key>C8305EAD199B44B013882E0BCD5FF2A9</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7B82D07365E23430D5FD1EFF5B753312</string>
+			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C42828A448E7C6D2443812EDE9B411C9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C462CC2FC1B20121B544EDB5181FF47E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>293D8240895EDE87FDD6EC2B4BF1F75D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C51BD72AE93016BF46A2B6030B1D9782</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQSystemSoundPlayer.h</string>
-			<key>path</key>
-			<string>JSQSystemSoundPlayer/Classes/JSQSystemSoundPlayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5B5EAA7F4CB463C023BD6A2D02A7DF9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQLocationMediaItem.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQLocationMediaItem.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5CCA62CAAFEC2F9D14645A534A8968F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewCellIncoming.xib</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCollectionViewCellIncoming.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C6E8B377ABDAD52CA47F4FE7609960F8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DC0D55885FAB2E38344B68F4114F5E96</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C7BCEEB94192725EC8F3FC8B015D6350</key>
-		<dict>
-			<key>fileRef</key>
-			<string>338A4EA36EEE5FAD5B65DBC61AB1BE6D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C85B0547B570CB298BAD424CAEDECB3B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewDelegateFlowLayout.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessagesCollectionViewDelegateFlowLayout.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C98EB58EB3C4B8B2F39CBF9AB138ED7E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessageBubbleImageDataSource.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessageBubbleImageDataSource.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CA5620D262FB6C9D3438C149917B4882</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesAvatarImage.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessagesAvatarImage.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CAE95371FFA1A5C8EAB27D1415B6A8AE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIView+JSQMessages.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Categories/UIView+JSQMessages.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC39E14439330DD9113DF9B15F2064A0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9EDAFA950C487BDE6F6EA9C9268A93FF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>CD07502E4093588ACE358EDF431AEE95</key>
 		<dict>
@@ -4111,43 +1556,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>CD5D4F9794DFB9E865F84FAEDD2ACE3D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8245FF95A0DF50A1A96C397799D6A997</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CE1D96DD9DAD7935A707C31DCF743DDF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesCellTextView.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCellTextView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CE6506EBC6BD0DBFB2E8F7FB993094C8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesLabel.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesLabel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>CEAEFEA28F85A19FAFC79FE11F52F44E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4160,6 +1568,32 @@
 			<string>Pods-Expresso-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CEC22C73C1608DFA5D5D78BDCB218219</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>CF1EC1D9529C04D089B000BD1003D6E1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1E29671D93E5BEE126A980D845AC5717</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>CF48EAC740EDA008A7090D80F62AB48B</key>
 		<dict>
@@ -4182,9 +1616,22 @@
 			<key>productName</key>
 			<string>Pods-ExpressoUITests</string>
 			<key>productReference</key>
-			<string>B39FA3D6942BEAA05BA3C7BCAD7B8CC2</string>
+			<string>F92D5F00BF8D6B6E0620269A8693FACA</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>CF52A66801ACB66144CBA1E6EBEE70D9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E3E116E374CFF4017AEEFE6E8EBC3026</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Analytics</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D027EFC36A62A3C620E6D6443DA72B1F</key>
 		<dict>
@@ -4199,33 +1646,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D11BFC8643CE69B6E4B8A15E4FE7252C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AD85F658633944EF7815B9B6D4A89A85</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D26C778D9091C76313B0D07694BB8DBF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DC517057C72B2EF3D7B8BC714C183756</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D32B05B344483442CAC284C960A19900</key>
+		<key>D281E91283F793E8CA75412349F48963</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>93E94CAB3439F0C79F6F3E2859DDB5CB</string>
-				<string>B181EAD3DC641D1975D0D8A166C0D46E</string>
+				<string>F847ABE6512B2018E8ED69364605DE26</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>FirebaseInstanceID</string>
-			<key>path</key>
-			<string>FirebaseInstanceID</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -4255,7 +1685,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>6A53F0D1158FED4EA6E410FF0D013F32</string>
+			<string>620D6FACC7AA55A8699470E762FE37B5</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -4264,9 +1694,7 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>EDA125ADA52355B7CA6DF7BA96918357</string>
-				<string>95DB89A8BFC5FF0BF98458651D0163CD</string>
-				<string>F849263993FE076AA246B10D2741C6C7</string>
+				<string>55D049B9DC71689B3C82684D86DCD06F</string>
 				<string>7B26DB324C2A7D93B915301CB2AC6B0A</string>
 				<string>CF48EAC740EDA008A7090D80F62AB48B</string>
 			</array>
@@ -4284,260 +1712,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D65FE0C8C5C13590E4BBB2DB9C8F4E60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF88215DD1D24D29B107B704E0CD625F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>D6F8B377BAFC70D4FD84C4892A1B71FA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>JSQMessagesViewController-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D7BE7C114A31C18C4DF46657CED0D9E7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesTypingIndicatorFooterView.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D802CB1535AF6DB7B0B59736DEEE3A86</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2B55DA6B905A197FD2C792316C0DAD43</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D9B44AA24C7EC49B977380BEFD09E5ED</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>DA03C7237DAE77C0E7FC04AEFF7935D5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesToolbarButtonFactory.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Factories/JSQMessagesToolbarButtonFactory.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA0657269B32B0C6A22ED7A9EE4BCC4F</key>
+		<key>DBFFACE7C9ED8EC5C7CC42F190190BC4</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>740A8314B7C2F6F0710AF687CDB4EF71</string>
-				<string>C5B5EAA7F4CB463C023BD6A2D02A7DF9</string>
-				<string>DC0D55885FAB2E38344B68F4114F5E96</string>
-				<string>3DB763D49C18E32EA7B1359F16168DB2</string>
-				<string>5E51A3C9D010C94D8EECB7E9AD3FB7A4</string>
-				<string>0CBA8D4D6269BCBB7E5492032EB81A78</string>
-				<string>AA0F54BD9A5D6943BFA2853104F2ACA9</string>
-				<string>C98EB58EB3C4B8B2F39CBF9AB138ED7E</string>
-				<string>AF88215DD1D24D29B107B704E0CD625F</string>
-				<string>8F4A8936DDF76BA97A1BB62B0CE5A935</string>
-				<string>25E01D8CFF77E5900567CF3C91A636EF</string>
-				<string>FD177F4A538509A8DE6FD6BB575A18A4</string>
-				<string>CA5620D262FB6C9D3438C149917B4882</string>
-				<string>30FBFFEE55F8114689E3A0C7AC241B8F</string>
-				<string>25D3FB5DFA501C9C38FD8F67814B2E9A</string>
-				<string>58D026B86D753565C738FFF6954DBF76</string>
-				<string>C27D9B53B957625698E14789C5B076B3</string>
-				<string>22823025F6C8B3A51B7A37C5DDF39103</string>
-				<string>A3F1B66D43E13B19B214EC66CD5CC199</string>
-				<string>E726CFB1B62A12917596FFD745C5E009</string>
-				<string>BB6CB32A5FBC32A941727204E5F76395</string>
-				<string>AD85F658633944EF7815B9B6D4A89A85</string>
-				<string>64B4C56B825226832E7C286E62627659</string>
-				<string>CE1D96DD9DAD7935A707C31DCF743DDF</string>
-				<string>12B8D1B60DBD29A998B6DD15B7C1D842</string>
-				<string>E579B4CABA84D009264DB5D1A75818CB</string>
-				<string>26F53C1DEF307F5E3D5F11693CEB5214</string>
-				<string>6B5D600470FD33AF8E1EC67C04B199AE</string>
-				<string>AAD1983D94CE4DB40E4C9A73BB71B77F</string>
-				<string>FCB8E0E41BBCC7AA1809B2D39E7584B3</string>
-				<string>BB764C2A06994AA370164851E7F6E0BD</string>
-				<string>257FFEAB5BCD8B5B27FE1CF9CD001AE1</string>
-				<string>193B379BB11A4F8996E07E13BEB71926</string>
-				<string>C85B0547B570CB298BAD424CAEDECB3B</string>
-				<string>2E22A8278F40FE1E46BF78908FEC3E4C</string>
-				<string>73C3ECD2470CDB90D83DF8E548474E1C</string>
-				<string>338A4EA36EEE5FAD5B65DBC61AB1BE6D</string>
-				<string>0E1EE834FA00FAB6DE208683B96B78B8</string>
-				<string>54F08BDE38333C5D7724385EBEC4B04C</string>
-				<string>6BF22E8967C27D51C1E0E9A8C9DE27C4</string>
-				<string>293D8240895EDE87FDD6EC2B4BF1F75D</string>
-				<string>1E5DE23598A6925E8465F5A51E6ADA23</string>
-				<string>7B82D07365E23430D5FD1EFF5B753312</string>
-				<string>84AB51C9DD8F1758ACD911E31D4B184E</string>
-				<string>B35A94B51F0F8995FBED2BBA0D29EA67</string>
-				<string>A21975FCBBFC8AE8EF75FA3B9955676F</string>
-				<string>4E6039EE1B5577E50EC725D55971D1E4</string>
-				<string>CE6506EBC6BD0DBFB2E8F7FB993094C8</string>
-				<string>313B4CD2762F8C05AF109C6E6052D658</string>
-				<string>36AEC0850118E9FBA6F9C90F63D8ED1F</string>
-				<string>18AFE094E969E7B5721367891C3A0067</string>
-				<string>96F30A5D85DE08B54EE63844BEFFA4C8</string>
-				<string>B7D229A8A65CC14E8E01D44CBF42605D</string>
-				<string>9C6B43D1705B50495AF158609BBC7ECB</string>
-				<string>ABB8A730D6AFD2D7CE62B111523FA3D2</string>
-				<string>F4D34C9A96F6A347E86CC5E66E1A32A0</string>
-				<string>089A1B6EDF4561F33C06E983FE008662</string>
-				<string>DA03C7237DAE77C0E7FC04AEFF7935D5</string>
-				<string>44BBD247C7AD31465786A3A0463299C3</string>
-				<string>0B2A7B693EB1E2F299A768145E48621A</string>
-				<string>270B2108798CD8E28F8C6ABB09B994F1</string>
-				<string>D7BE7C114A31C18C4DF46657CED0D9E7</string>
-				<string>DB1FA8BBE8C8E9CEE6FE04E36AD802F3</string>
-				<string>A1279C9A904EF4F37E9E1D245EDE8FD4</string>
-				<string>5B38945B99647F8A0C7A7EE64A69E5E1</string>
-				<string>1D4F0CD6C26BB0A19B326F01B5185CDE</string>
-				<string>BECFFFE683B73792EF863404B3B8BBF7</string>
-				<string>730331CDD83AC7627552415F6C426792</string>
-				<string>661EF983F27B86EA6D0D109EC6BF3BBC</string>
-				<string>DF7D9C1220D082966DA473AD1612EAA5</string>
-				<string>DDCF6407CFB4ACCA6B0AB184A13DBB34</string>
-				<string>B8BB61D9D1EE1A0F1B0DF2B37CA4164E</string>
-				<string>74C9FD06A45E11D06FA7BC02E2C084C4</string>
-				<string>DC517057C72B2EF3D7B8BC714C183756</string>
-				<string>E74D5EDD4E8FB92A725D4E5AF199CCC9</string>
-				<string>2B55DA6B905A197FD2C792316C0DAD43</string>
-				<string>011AF910652F20BF7BB92384F6EC69E0</string>
-				<string>7600FF3C683E3CE30455BE18B782C3C2</string>
-				<string>AA2996E7531696E927FB5722884AD450</string>
-				<string>30F044A2C7B067F817A5AE9CC69B91C6</string>
-				<string>CAE95371FFA1A5C8EAB27D1415B6A8AE</string>
-				<string>932AF3701EF5B3DD91DE3C9286DCD617</string>
-				<string>E578AB301FB76CDAC0670911C9460A5C</string>
-				<string>98B5946B9679FB1F4BDE4A3ABDA70EEB</string>
+				<string>A6E49B499546589686E163EECC8085DF</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>JSQMessagesViewController</string>
+			<string>GoogleInterchangeUtilities</string>
 			<key>path</key>
-			<string>JSQMessagesViewController</string>
+			<string>GoogleInterchangeUtilities</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA588C9F819184963E49044268212D55</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A4AF4DD9F96205D48F6727C37C1D83CC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DA7BFB069F6423C92976F65896B541F3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A21975FCBBFC8AE8EF75FA3B9955676F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DB1FA8BBE8C8E9CEE6FE04E36AD802F3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesViewController.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Controllers/JSQMessagesViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBAA73A0AC88AA9EE38FEA408A547DA7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BC7A444E13E0AAB8E06FDB97D290F37B</string>
-				<string>803DB64DFCDE4A051908D928F31E9BF1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DC0D55885FAB2E38344B68F4114F5E96</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMediaItem.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMediaItem.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DC517057C72B2EF3D7B8BC714C183756</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSString+JSQMessages.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Categories/NSString+JSQMessages.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DDBAD24620FF66ABAECECC4EA04015C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30F044A2C7B067F817A5AE9CC69B91C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>DDC9B996BCCB65A4464D344B423B7AD3</key>
 		<dict>
@@ -4552,138 +1740,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>DDCF6407CFB4ACCA6B0AB184A13DBB34</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSBundle+JSQMessages.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Categories/NSBundle+JSQMessages.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DE7EEFB5F5199E18F85666E8187F9388</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>EDA125ADA52355B7CA6DF7BA96918357</string>
-			<key>remoteInfo</key>
-			<string>JSQMessagesViewController</string>
-		</dict>
-		<key>DF126628D8B166F2DBB99DEA6DD4A5B4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D9B44AA24C7EC49B977380BEFD09E5ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF7D9C1220D082966DA473AD1612EAA5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQVideoMediaItem.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQVideoMediaItem.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E0177CC81127C1DDE3919B5571D75301</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2917BE4A081AF573F4C95F65FF7AD598</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E3E71F8AA114F1C8D6B3C130171C8969</key>
-		<dict>
-			<key>fileRef</key>
-			<string>257FFEAB5BCD8B5B27FE1CF9CD001AE1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E41831AD2614E90CDDB413C9213045EE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A4AF4DD9F96205D48F6727C37C1D83CC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E50B1F2B49D0D5B4E7AB0AAB8D281645</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8B6365494AE2A70B1214C2BC1E2AA4B4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E578AB301FB76CDAC0670911C9460A5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E6F66FAA1F6C6E03703DAA3091AA7656</string>
-				<string>C5CCA62CAAFEC2F9D14645A534A8968F</string>
-				<string>F58372DF28585A786DE0DE53E907FDCE</string>
-				<string>3AA1F98D89D85B2B870A1C33F554D1F9</string>
-				<string>B7383B6850F0B195B7F6AA53AC69FC34</string>
-				<string>1028D8F9B7569ECBFE1C7965008F1819</string>
-				<string>297FF691F7FC3B0B9AC3CD61E0ED78DB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E579B4CABA84D009264DB5D1A75818CB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionView.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCollectionView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5F394B09B2D9A5A72E0A4644C5D1579</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0A7A39C9683D82CE702940D47FE02F41</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E6006C4B58A7B9867EBA38CDFAEC50E4</key>
+		<key>E3E116E374CFF4017AEEFE6E8EBC3026</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4695,80 +1752,6 @@
 			<string>Firebase.h</string>
 			<key>path</key>
 			<string>Headers/Firebase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E615A894492B77A0BD6F9959C161B6D3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4E6039EE1B5577E50EC725D55971D1E4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>E6F66FAA1F6C6E03703DAA3091AA7656</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>name</key>
-			<string>JSQMessagesAssets.bundle</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Assets/JSQMessagesAssets.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E726CFB1B62A12917596FFD745C5E009</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesBubbleSizeCalculating.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Layout/JSQMessagesBubbleSizeCalculating.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E73A839123F8349379C0393124C8FCC4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>95B94D6152275EF431A1422FA0CDD87F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GoogleNetworkingUtilities</string>
-			<key>path</key>
-			<string>GoogleNetworkingUtilities</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E74D5EDD4E8FB92A725D4E5AF199CCC9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIColor+JSQMessages.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Categories/UIColor+JSQMessages.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -4796,48 +1779,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E7FC9D2F2D976FCE3BC21F45C54EA14C</key>
+		<key>EB7A564D36A7D9E62CD7CDA67B579F51</key>
 		<dict>
-			<key>fileRef</key>
-			<string>011AF910652F20BF7BB92384F6EC69E0</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>E874C77E9AA8D7B93075F19C92E15E72</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>44F7AB6745DD3484F3BFEA5A31FAF6B6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>GoogleUtilities</string>
+			<string>GoogleInterchangeUtilities.framework</string>
 			<key>path</key>
-			<string>GoogleUtilities</string>
+			<string>Frameworks/GoogleInterchangeUtilities.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EA4AC4719600FCF72414478F4B0E96C9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3DB763D49C18E32EA7B1359F16168DB2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EA8C385D910E0F3C7A94F5677A6517B5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E6F66FAA1F6C6E03703DAA3091AA7656</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>EBED3F745B7A1D1CC53498E7575CABC7</key>
 		<dict>
@@ -4865,143 +1818,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EC974BCF5F856418959704D7FA319719</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E0177CC81127C1DDE3919B5571D75301</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GoogleInterchangeUtilities</string>
-			<key>path</key>
-			<string>GoogleInterchangeUtilities</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED4BA03030B31D5D70B31370FECFE57B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>313B4CD2762F8C05AF109C6E6052D658</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>EDA125ADA52355B7CA6DF7BA96918357</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>829B8ACA60CB7423C291830F2B956E5C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F6471948B6CD6EF65B7335B9C0B07A51</string>
-				<string>AD750E082514D73CE37CE6C5861C259C</string>
-				<string>F42C185EB298E8BEE8E6EB4CE2807D54</string>
-				<string>992DE229E38BAFF3876E08438962CD8D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>5C84B2DE86B8F95C47956701871A1F7A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>JSQMessagesViewController</string>
-			<key>productName</key>
-			<string>JSQMessagesViewController</string>
-			<key>productReference</key>
-			<string>BFAE61A4EC7BC55A4775273B3DB85599</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>EE0E6EDBF62E43D8FE03916137B8291D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>730331CDD83AC7627552415F6C426792</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EE707D1528D432FD7EEDA713BBE7C80B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>GoogleSymbolUtilities.framework</string>
-			<key>path</key>
-			<string>Frameworks/GoogleSymbolUtilities.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EFCA4D6D3BDD4D515B391E4525C24E12</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9476DDBCA58AA19D6FCB4132A262298C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/JSQSystemSoundPlayer/JSQSystemSoundPlayer-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/JSQSystemSoundPlayer/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/JSQSystemSoundPlayer/JSQSystemSoundPlayer.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>JSQSystemSoundPlayer</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
 		<key>F328A90DED4BDB899F64C886BB813146</key>
 		<dict>
 			<key>children</key>
@@ -5026,70 +1842,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F42C185EB298E8BEE8E6EB4CE2807D54</key>
+		<key>F335366D4A0BD77B1FF987AEFCAC309C</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0759002AB28878ABF7C3164E313EFEA6</string>
-				<string>C6E8B377ABDAD52CA47F4FE7609960F8</string>
-				<string>913A644DA5695417AFC477E39F34007F</string>
-				<string>21CC978B0D7EAA1C0E432EE121AF01BA</string>
-				<string>2E6599BAE5A9B1961279847182F8EA4C</string>
-				<string>D65FE0C8C5C13590E4BBB2DB9C8F4E60</string>
-				<string>4E946772C52A82B434DB7E55D1269706</string>
-				<string>A870E55065C3CF6D01768FB72524DF0A</string>
-				<string>7E7709236A1020698BF2D3E54E51F912</string>
-				<string>4B742B0EF5F7162FEC382F37E8755579</string>
-				<string>031033A91A133EBFD47D7CFA7A9F31FB</string>
-				<string>FF3172D70222924728AF677738B78184</string>
-				<string>4F4D0653B02636C9BA10F96EA081AEC2</string>
-				<string>44620CAF348A786FF605D031C12F9F0F</string>
-				<string>4C848C14B88DFA501D24A6FDB3905654</string>
-				<string>3722B8EFCCD92C09EF856D67B4085A4D</string>
-				<string>94286FFB3D87C2D8950D961DD3780359</string>
-				<string>04EFCD813482DAD2D33AF88A05921827</string>
-				<string>2A641E411AF34FBF9A3C53559C00697C</string>
-				<string>310563FD959B3216B7C225D64CAC2B60</string>
-				<string>4D60C0793B78C397E2C84E67F96E43F9</string>
-				<string>A447CE973A7EF7DF61CB86BFA70ECA43</string>
-				<string>C7BCEEB94192725EC8F3FC8B015D6350</string>
-				<string>0D4445598FB98BB7FF14E03782938247</string>
-				<string>C462CC2FC1B20121B544EDB5181FF47E</string>
-				<string>C30E09DEC4DD546B2B9AF06FA73EDB3C</string>
-				<string>9D278E1E85611361C20A27A21E2106C7</string>
-				<string>E615A894492B77A0BD6F9959C161B6D3</string>
-				<string>ED4BA03030B31D5D70B31370FECFE57B</string>
-				<string>996BC8135736A4788E1EB4FD862C54AB</string>
-				<string>7CF7B8B79553AED579B5B5498E353FED</string>
-				<string>4319A72765FFE454BFC3BFC106B38935</string>
-				<string>6EF411D685F4F6672FBFC212D99B8517</string>
-				<string>3480EDA0D24BF43580DA7090D640EA88</string>
-				<string>1673FB1ADB0B87400674C96D52256CDC</string>
-				<string>7B182EBCB49E2BDDD55318B5A9672E19</string>
-				<string>9B969D5B2713522C106733E044F572BE</string>
-				<string>01BCA0408211229065272E6F789E4E23</string>
-				<string>7DD0ED649FD104E405F10EBA2F3DEB62</string>
-				<string>B96DB1A8358D6EABB78BB6D76C17D8A0</string>
-				<string>F8F7562DDB3702E5A514C8C42A6C5A2B</string>
-				<string>377CD0DE8B95E0E9B5094D823471B1AF</string>
-				<string>A9FF5A070C0DD7251ED232230633FB1C</string>
-				<string>E7FC9D2F2D976FCE3BC21F45C54EA14C</string>
-				<string>4D23921227D519A3AB89F604CA8CEFC9</string>
-				<string>49597BC9119A404D2A7EFDD4429D01B1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
 			<string>0</string>
-		</dict>
-		<key>F43420649D00FE58153410E438EBFC3E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E579B4CABA84D009264DB5D1A75818CB</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_Expresso.framework</string>
+			<key>path</key>
+			<string>Pods-Expresso.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>F4444CBE87E77EDD993CC64D38306166</key>
 		<dict>
@@ -5103,93 +1869,6 @@
 			<string>Pods-Expresso-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F4D34C9A96F6A347E86CC5E66E1A32A0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesTimestampFormatter.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Factories/JSQMessagesTimestampFormatter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F51541856B3D5CE6DBCC32FCA49EAB25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0B2A7B693EB1E2F299A768145E48621A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F58372DF28585A786DE0DE53E907FDCE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewCellOutgoing.xib</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCollectionViewCellOutgoing.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F6471948B6CD6EF65B7335B9C0B07A51</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7D80D67411C6E96CB16F3504D08B5257</string>
-				<string>EA4AC4719600FCF72414478F4B0E96C9</string>
-				<string>6FB2C679EE1B073C92222312CE4DED2E</string>
-				<string>40FC2CD413157D47FD77016572174DD2</string>
-				<string>7ACF76BC05AB2595DAAC828A323B853C</string>
-				<string>9E9E4AD4BCCC2451D25D86703625E577</string>
-				<string>7E4DF362ABBE66C47E42B839FD0FD452</string>
-				<string>D11BFC8643CE69B6E4B8A15E4FE7252C</string>
-				<string>01B02315A86819C4EBA424D63C399B3F</string>
-				<string>F43420649D00FE58153410E438EBFC3E</string>
-				<string>677E950E48C65166C3A94290E6A991AA</string>
-				<string>AA606C0962DBECF36C28A5B1C05B9F56</string>
-				<string>E3E71F8AA114F1C8D6B3C130171C8969</string>
-				<string>16924EEBF200D0BA50255BC9A6B3E13C</string>
-				<string>BFF5A6CE11DD2E86D726E0D19B47F866</string>
-				<string>19D8C07F990FC1A560D2FBB49437D51F</string>
-				<string>266AB872C63A637ECCD49EE57728B627</string>
-				<string>3BB4750CE09E600585A3F3866FDDE8DD</string>
-				<string>DA7BFB069F6423C92976F65896B541F3</string>
-				<string>83098C4D51D877577AB012A1D597612E</string>
-				<string>8DA9D21A18930905E19F90AA7A15D7D7</string>
-				<string>5AC07CD15CF4E91BE4E4D8169E3C7C13</string>
-				<string>7B026957DB50FA1CC33149156B43568D</string>
-				<string>30F37D35F4CE6D0090B951DD0F3F94CB</string>
-				<string>6B79639EB9853021B616514910AE390D</string>
-				<string>F51541856B3D5CE6DBCC32FCA49EAB25</string>
-				<string>1B09CA397A870FDB9EC3CABEA18B1331</string>
-				<string>259BE4949282E088B26D4733752A683E</string>
-				<string>571702D32E7DCE545400B905107DBCCF</string>
-				<string>3E48A4925C06B910F3DD998EC0958E3E</string>
-				<string>EE0E6EDBF62E43D8FE03916137B8291D</string>
-				<string>68C18B87FBF4828EE53EB994723B9340</string>
-				<string>941FDAB841725CA47ACB2FCFAA3CC2A7</string>
-				<string>D26C778D9091C76313B0D07694BB8DBF</string>
-				<string>D802CB1535AF6DB7B0B59736DEEE3A86</string>
-				<string>BDD4A5CD12686E13109709406112AA87</string>
-				<string>DDBAD24620FF66ABAECECC4EA04015C7</string>
-				<string>A8415FAB377F1D422D8886191AF0BCE5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>F7A5F7B687F9505F2C18799FA9411963</key>
 		<dict>
@@ -5215,144 +1894,35 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F843D8E44DA61A22635498E495ED1737</key>
+		<key>F847ABE6512B2018E8ED69364605DE26</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>91ED3DB04EB497B76A9E5568F613DDBC</string>
-			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>FirebaseAnalytics</string>
+			<string>GoogleUtilities.framework</string>
 			<key>path</key>
-			<string>FirebaseAnalytics</string>
+			<string>Frameworks/GoogleUtilities.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F849263993FE076AA246B10D2741C6C7</key>
+		<key>F92D5F00BF8D6B6E0620269A8693FACA</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>83F155B5B4C4F7908BF8305E1244DB46</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BC37716ED46FEFA1C352542966BA8CE1</string>
-				<string>7454B28CC33ADF2EA2083E1C31A34EF4</string>
-				<string>E50B1F2B49D0D5B4E7AB0AAB8D281645</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>6A4C500C3619B04F923FCBFE63907F9A</string>
-				<string>6E553F5F906C7287A82C5282BA3F69BB</string>
-			</array>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
+			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>Pods-Expresso</string>
-			<key>productName</key>
-			<string>Pods-Expresso</string>
-			<key>productReference</key>
-			<string>382E22B8D71EDDC98A90CCB6420F82F1</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>F8F7562DDB3702E5A514C8C42A6C5A2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DDCF6407CFB4ACCA6B0AB184A13DBB34</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>F9262114B0ED5EA9A27E2107E17B2B60</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B2A4CC4FF313607506BEB9B1D9B7933E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/JSQMessagesViewController/JSQMessagesViewController-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/JSQMessagesViewController/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/JSQMessagesViewController/JSQMessagesViewController.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>JSQMessagesViewController</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F94A45EE16FDFE3C56A89496F10E8D8D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7DCD08F939EB1E99120A8A0DC7794C88</string>
-				<string>7751715BD60390AAE0151A7F8E9361F4</string>
-				<string>9476DDBCA58AA19D6FCB4132A262298C</string>
-				<string>9031EBB9D4019D066ED9AB32A1C22210</string>
-				<string>125C5637E8D7C4F973265CBE20569F90</string>
-				<string>102CCFB6EA10634DF9EC25CD1BA667BB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
+			<string>Pods_ExpressoUITests.framework</string>
 			<key>path</key>
-			<string>../Target Support Files/JSQSystemSoundPlayer</string>
+			<string>Pods-ExpressoUITests.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>F9F7655BF982B604CBCAD9EC06C0CAC8</key>
+		<key>FAB62443D5DE359196153ADAC1D12FCE</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>wrapper.framework</string>
@@ -5371,57 +1941,6 @@
 		<dict>
 			<key>fileRef</key>
 			<string>15B769363E8A2B727F2DAE16157C2620</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>FCB8E0E41BBCC7AA1809B2D39E7584B3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSQMessagesCollectionViewCellIncoming.m</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Views/JSQMessagesCollectionViewCellIncoming.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FD177F4A538509A8DE6FD6BB575A18A4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSQMessagesAvatarImage.h</string>
-			<key>path</key>
-			<string>JSQMessagesViewController/Model/JSQMessagesAvatarImage.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FF31352F3ED1F8F6125A45EBC1AB87EC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9031EBB9D4019D066ED9AB32A1C22210</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FF3172D70222924728AF677738B78184</key>
-		<dict>
-			<key>fileRef</key>
-			<string>22823025F6C8B3A51B7A37C5DDF39103</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
