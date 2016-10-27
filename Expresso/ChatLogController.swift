@@ -12,8 +12,15 @@ import Firebase
 
 class ChatLogController: UICollectionViewController, UITextFieldDelegate {
     
+    var adminId: String?
     var uid: String?
-    var roomId: String?
+    
+    var roomId: String? {
+        didSet {
+            getRoomInfo()
+            observeMessages()
+        }
+    }
     
     lazy var inputTextField: UITextField = {
         let textField = UITextField()
@@ -23,12 +30,25 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
         return textField
     }()
     
+    func getRoomInfo(){
+        let chatroomRef = FIRDatabase.database().reference().child("chatrooms").child(roomId!)
+        
+        chatroomRef.observe(.value, with: { (snapshot) in
+            
+            guard let dictionary = snapshot.value as? [String: AnyObject] else {
+                return
+            }
+            
+            if let uid = dictionary["posterId"] as? String {
+                self.adminId = uid
+                print(uid)
+            }
+            
+            
+            }, withCancel: nil)
+    }
     
     var messages = [Message]()
-    
-    override func viewDidAppear(_ animated: Bool) {
-        observeMessages()
-    }
     
     func scrollToLastMessage(){
         
@@ -74,7 +94,6 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
                 }
                 
                 self.messages.append(message)
-                print(message)
                 
                 DispatchQueue.main.async {
                     self.collectionView?.reloadData()
@@ -95,6 +114,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
         setupNavBar()
         setupCollectionView()
         setupInputComponents()
+        getRoomInfo()
 
     }
     
@@ -151,6 +171,13 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
             //incoming gray
             cell.bubbleView.backgroundColor = UIColor.init(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1)
             cell.textView.textColor = .black
+                
+                if message.fromId == adminId {
+                    cell.profileImageView.backgroundColor = .red
+                }else{
+                    cell.profileImageView.backgroundColor = .purple
+                }
+            
             cell.profileImageView.isHidden = false
                 
            cell.bubbleViewLeftAnchor?.isActive = true
@@ -158,6 +185,9 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
         }
         
     }
+    
+    
+    // distinguish admin by getting the message.toId = roomId
     
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -246,10 +276,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
         let values = ["text": inputTextField.text!, "toId": roomId!, "fromId": fromId, "timestamp": currentTime] as [String : Any]
         
         childRef.updateChildValues(values) { (error, ref) in
-            if error != nil {
-                print(error)
-                return
-            }
+   
             
             self.inputTextField.text = nil
             
