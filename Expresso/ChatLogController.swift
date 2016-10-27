@@ -28,13 +28,13 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         observeMessages()
-
     }
     
     func observeMessages() {
         
         //observe user-messages from cell's uid (aka help request poster)
         let userMessagesRef = FIRDatabase.database().reference().child("user-messages").child(roomId!)
+
         userMessagesRef.observe(.childAdded, with: { (snapshot) in
             
             let messageId = snapshot.key
@@ -62,14 +62,9 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
                 if let timestamp = dictionary["timestamp"] as! NSNumber?{
                     message.timestamp = timestamp
                 }
-
                 
                 self.messages.append(message)
                 print(message)
-
-//                if message.chatPartnerId() == uid {
-//                    self.messages.append(message)
-//                }
                 
                 DispatchQueue.main.async {
                     self.collectionView?.reloadData()
@@ -87,26 +82,28 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView?.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 58, right: 0)
-        collectionView?.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
+        setupNavBar()
+        setupCollectionView()
+        setupInputComponents()
 
-        
-
-        navigationItem.title = "Chat Log Controller"
+    }
+    
+    func setupNavBar(){
+        navigationItem.title = "Chat Room"
         navigationController?.navigationBar.tintColor = .white
         let moreButton = UIBarButtonItem(image: UIImage(named: "menu")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(menuTap))
         moreButton.tintColor = .white
         
-        
-        navigationItem.rightBarButtonItems =  [moreButton]        
-
+        navigationItem.rightBarButtonItems =  [moreButton]
+    }
+    
+    func setupCollectionView(){
         collectionView?.backgroundColor = .white
         collectionView?.alwaysBounceVertical = true
-        collectionView?.backgroundColor = .white
         collectionView?.register(ChatMessageCell.self, forCellWithReuseIdentifier: cellId)
-
-        setupInputComponents()
-
+        collectionView?.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 58, right: 0)
+        collectionView?.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
+        
     }
     
     func menuTap(){
@@ -123,8 +120,9 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
         let message = messages[indexPath.item]
         cell.textView.text = message.text
         
-        cell.bubbleWidthAnchor?.constant = estimateFrameForText(message.text!).width + 32
         setupCell(cell: cell, message: message)
+
+        //cell.bubbleWidthAnchor?.constant = estimateFrameForText(message.text!).width + 32
 
         return cell
     }
@@ -145,16 +143,18 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
             cell.textView.textColor = .black
             cell.profileImageView.isHidden = false
                 
-                
-            cell.bubbleViewRightAnchor?.isActive = false
             cell.bubbleViewLeftAnchor?.isActive = true
+            cell.bubbleViewRightAnchor?.isActive = false
         }
+        
+        cell.bubbleWidthAnchor?.constant = estimateFrameForText(message.text!).width + 32
     }
     
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         collectionView?.collectionViewLayout.invalidateLayout()
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
 
@@ -222,9 +222,16 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
     }
     
     func handleSend() {
-        let ref = FIRDatabase.database().reference().child("messages")
-        let childRef = ref.childByAutoId()
+
+
         
+        
+        // Make database reference for messages
+        let ref = FIRDatabase.database().reference().child("messages")
+        // Child node is autoid
+        let childRef = ref.childByAutoId()
+
+        // sender
         let fromId = FIRAuth.auth()!.currentUser!.uid
         let currentTime:Int = Int(NSDate().timeIntervalSince1970)
         
@@ -236,7 +243,14 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
                 return
             }
             
-            let userMessagesRef = FIRDatabase.database().reference().child("user-messages").child(fromId)
+            self.inputTextField.text = nil
+            
+            let indexPath = IndexPath(item: self.messages.count - 1 , section: 0)
+            
+            DispatchQueue.main.async {
+                self.collectionView?.scrollToItem(at: indexPath, at: [] , animated: true)
+            }
+            let userMessagesRef = FIRDatabase.database().reference().child("user-messages").child(self.roomId!)
             
             let messageId = childRef.key
             userMessagesRef.updateChildValues([messageId: 1])

@@ -11,11 +11,9 @@ class ChatMessageCell: UICollectionViewCell {
     
     
     static let blueColor = UIColor.init(red: 0, green: 137/255.0, blue: 249/255.0, alpha: 1)
-
     
     let textView: UITextView = {
         let tv = UITextView()
-        tv.text = "SAMPLE TEXT FOR NOW"
         tv.font = UIFont.systemFont(ofSize: 16)
         tv.translatesAutoresizingMaskIntoConstraints = false
         tv.backgroundColor = UIColor.clear
@@ -36,7 +34,6 @@ class ChatMessageCell: UICollectionViewCell {
     let bubbleView: UIView = {
         let view = UIView()
         view.backgroundColor = .systemColor("main")
-
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 16
         view.layer.masksToBounds = true
@@ -72,21 +69,20 @@ class ChatMessageCell: UICollectionViewCell {
         
         bubbleViewRightAnchor = bubbleView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -8)
         bubbleViewRightAnchor?.isActive = true
-        bubbleViewLeftAnchor = bubbleView.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 8)
-
         
+        bubbleViewLeftAnchor = bubbleView.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 8)
         
         bubbleViewLeftAnchor?.isActive = false
         
         //ios 9 constraints
         //x,y,w,h
+        
         //        textView.rightAnchor.constraintEqualToAnchor(self.rightAnchor).active = true
         textView.leftAnchor.constraint(equalTo: bubbleView.leftAnchor, constant: 8).isActive = true
         textView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         
         textView.rightAnchor.constraint(equalTo: bubbleView.rightAnchor).isActive = true
         //        textView.widthAnchor.constraintEqualToConstant(200).active = true
-        
         
         textView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
     }

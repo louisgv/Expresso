@@ -11,7 +11,6 @@ import Firebase
 
 class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
-    
     var homeController = HomeController()
     
     let cellId = "cellId"
@@ -134,7 +133,6 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
         return button
     }()
     
-    
     func handleButtonTap() {
         
         if checkInputValues(){
@@ -176,9 +174,9 @@ class CreateChatRoomController: UIViewController, UIPickerViewDelegate, UIPicker
                     
             })
             
-            
-            self.navigationController!.popViewController(animated: false)
             homeController.navigationController?.navigationBar.barTintColor = .systemColor("main")
+            navigationController?.navigationBar.barTintColor = .systemColor("main")
+            self.navigationController!.popViewController(animated: false)
             homeController.launchChatRoom(roomId)
 
         }
