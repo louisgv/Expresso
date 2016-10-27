@@ -30,6 +30,16 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
         observeMessages()
     }
     
+    func scrollToLastMessage(){
+        
+        if messages.count > 0 {
+            let indexPath = IndexPath(row: messages.count - 1, section: 0)
+            collectionView?.scrollToItem(at: indexPath, at: .bottom, animated: true)
+        }
+
+    }
+    
+    
     func observeMessages() {
         
         //observe user-messages from cell's uid (aka help request poster)
@@ -122,7 +132,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
         
         setupCell(cell: cell, message: message)
 
-        //cell.bubbleWidthAnchor?.constant = estimateFrameForText(message.text!).width + 32
+        cell.bubbleWidthAnchor?.constant = estimateFrameForText(message.text!).width + 32
 
         return cell
     }
@@ -143,18 +153,16 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
             cell.textView.textColor = .black
             cell.profileImageView.isHidden = false
                 
-            cell.bubbleViewLeftAnchor?.isActive = true
+           cell.bubbleViewLeftAnchor?.isActive = true
             cell.bubbleViewRightAnchor?.isActive = false
         }
         
-        cell.bubbleWidthAnchor?.constant = estimateFrameForText(message.text!).width + 32
     }
     
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         collectionView?.collectionViewLayout.invalidateLayout()
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
 
@@ -245,11 +253,6 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
             
             self.inputTextField.text = nil
             
-            let indexPath = IndexPath(item: self.messages.count - 1 , section: 0)
-            
-            DispatchQueue.main.async {
-                self.collectionView?.scrollToItem(at: indexPath, at: [] , animated: true)
-            }
             let userMessagesRef = FIRDatabase.database().reference().child("user-messages").child(self.roomId!)
             
             let messageId = childRef.key
@@ -259,6 +262,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         handleSend()
+        scrollToLastMessage()
         return true
     }
 }

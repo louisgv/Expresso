@@ -238,12 +238,10 @@ class helpRequestCell: BaseCell {
         announcementTitle.leadingAnchor.constraint(equalTo: self.readableContentGuide.leadingAnchor).isActive = true
         announcementTitle.trailingAnchor.constraint(equalTo: self.readableContentGuide.trailingAnchor).isActive = true
         
-        
         topicLabel.topAnchor.constraint(equalTo: announcementTitle.bottomAnchor, constant: -2).isActive = true
         topicLabel.leftAnchor.constraint(equalTo: announcementTitle.leftAnchor, constant: 6).isActive = true
         topicLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
         topicLabel.heightAnchor.constraint(equalToConstant: 15).isActive = true
-        
         
         joinSeparator.topAnchor.constraint(equalTo: topicLabel.bottomAnchor, constant: 10).isActive = true
         joinSeparator.centerXAnchor.constraint(equalTo: bottomButtonContainer.centerXAnchor).isActive = true

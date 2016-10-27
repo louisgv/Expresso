@@ -191,7 +191,7 @@ class HelpScreenController: UIViewController{
         callHelpLabel.topAnchor.constraint(equalTo: imageViewBackground.bottomAnchor, constant: 18).isActive = true
         callHelpLabel.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor).isActive = true
         callHelpLabel.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor).isActive = true
-        callHelpLabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        callHelpLabel.bottomAnchor.constraint(equalTo: helpMeButton.topAnchor).isActive = true
         
         emergencyLabel.centerXAnchor.constraint(equalTo: emergencyContainer.centerXAnchor).isActive = true
         emergencyLabel.centerYAnchor.constraint(equalTo: emergencyContainer.centerYAnchor).isActive = true
